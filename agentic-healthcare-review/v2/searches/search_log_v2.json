@@ -1,0 +1,49 @@
+{
+  "logs": [
+    {
+      "query_id": "C1_crossref",
+      "query": "agentic healthcare clinical safety",
+      "reported_count": 1596443,
+      "retrieved_count": 200,
+      "complete": false,
+      "retrieval_limit": 200,
+      "retrieved_at": "2026-10-11T17:53:33.691880+00:00",
+      "api_url": "https://api.crossref.org/works?query.bibliographic=agentic+healthcare+clinical+safety&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-10&rows=200",
+      "restriction": "relevance-ranked metadata discovery; deliberately bounded, not exhaustive search"
+    },
+    {
+      "query_id": "C2_crossref",
+      "query": "large language model medical agent execution safety",
+      "reported_count": 2761933,
+      "retrieved_count": 200,
+      "complete": false,
+      "retrieval_limit": 200,
+      "retrieved_at": "2026-10-11T17:53:33.889723+00:00",
+      "api_url": "https://api.crossref.org/works?query.bibliographic=large+language+model+medical+agent+execution+safety&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-10&rows=200",
+      "restriction": "relevance-ranked metadata discovery; deliberately bounded, not exhaustive search"
+    },
+    {
+      "query_id": "E1_action_safety",
+      "query": "(TITLE_ABS:\"large language model\" OR TITLE_ABS:LLM OR TITLE_ABS:agentic) AND (TITLE_ABS:agent OR TITLE_ABS:agents OR TITLE_ABS:\"tool use\" OR TITLE_ABS:\"computer use\") AND (TITLE_ABS:healthcare OR TITLE_ABS:clinical OR TITLE_ABS:medical OR TITLE_ABS:patient) AND (TITLE_ABS:safety OR TITLE_ABS:execution OR TITLE_ABS:oversight OR TITLE_ABS:authorization OR TITLE_ABS:\"prompt injection\") AND FIRST_PDATE:[2022-01-01 TO 2026-10-10]",
+      "reported_count": 218,
+      "retrieved_count": 218,
+      "complete": true,
+      "retrieved_at": "2026-10-11T17:53:55.738112+00:00",
+      "api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22large+language+model%22+OR+TITLE_ABS%3ALLM+OR+TITLE_ABS%3Aagentic%29+AND+%28TITLE_ABS%3Aagent+OR+TITLE_ABS%3Aagents+OR+TITLE_ABS%3A%22tool+use%22+OR+TITLE_ABS%3A%22computer+use%22%29+AND+%28TITLE_ABS%3Ahealthcare+OR+TITLE_ABS%3Aclinical+OR+TITLE_ABS%3Amedical+OR+TITLE_ABS%3Apatient%29+AND+%28TITLE_ABS%3Asafety+OR+TITLE_ABS%3Aexecution+OR+TITLE_ABS%3Aoversight+OR+TITLE_ABS%3Aauthorization+OR+TITLE_ABS%3A%22prompt+injection%22%29+AND+FIRST_PDATE%3A%5B2022-01-01+TO+2026-10-10%5D&format=json&pageSize=100&cursorMark=AoIIQGaJZig1NDgwMDk3NA%3D%3D&resultType=core",
+      "overlap_note": "MED includes PubMed; PPR includes preprints; not independent coverage"
+    },
+    {
+      "query_id": "P3_action_safety",
+      "query": "((\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract] OR LLM[Title/Abstract] OR agentic[Title/Abstract]) AND (agent[Title/Abstract] OR agents[Title/Abstract] OR agentic[Title/Abstract] OR \"tool use\"[Title/Abstract] OR \"computer use\"[Title/Abstract]) AND (healthcare[Title/Abstract] OR clinical[Title/Abstract] OR medical[Title/Abstract] OR patient[Title/Abstract]) AND (safety[Title/Abstract] OR safe[Title/Abstract] OR risk[Title/Abstract] OR execution[Title/Abstract] OR oversight[Title/Abstract] OR authorization[Title/Abstract] OR \"prompt injection\"[Title/Abstract])) AND (\"2022/01/01\"[Date - Publication] : \"2026/10/10\"[Date - Publication])",
+      "reported_count": 394,
+      "retrieved_count": 394,
+      "complete": true,
+      "retrieved_at": "2026-10-11T17:54:05.538380+00:00",
+      "api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22large+language+models%22%5BTitle%2FAbstract%5D+OR+LLM%5BTitle%2FAbstract%5D+OR+agentic%5BTitle%2FAbstract%5D%29+AND+%28agent%5BTitle%2FAbstract%5D+OR+agents%5BTitle%2FAbstract%5D+OR+agentic%5BTitle%2FAbstract%5D+OR+%22tool+use%22%5BTitle%2FAbstract%5D+OR+%22computer+use%22%5BTitle%2FAbstract%5D%29+AND+%28healthcare%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D+OR+medical%5BTitle%2FAbstract%5D+OR+patient%5BTitle%2FAbstract%5D%29+AND+%28safety%5BTitle%2FAbstract%5D+OR+safe%5BTitle%2FAbstract%5D+OR+risk%5BTitle%2FAbstract%5D+OR+execution%5BTitle%2FAbstract%5D+OR+oversight%5BTitle%2FAbstract%5D+OR+authorization%5BTitle%2FAbstract%5D+OR+%22prompt+injection%22%5BTitle%2FAbstract%5D%29%29+AND+%28%222022%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F10%22%5BDate+-+Publication%5D%29&retmax=10000&retmode=json"
+    }
+  ],
+  "errors": [],
+  "cutoff": "2026-10-10",
+  "retrieved_at": "2026-10-11T17:54:05.547741+00:00",
+  "private_raw_retained_outside_public_repo": true
+}

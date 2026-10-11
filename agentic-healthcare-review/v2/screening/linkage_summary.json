@@ -1,0 +1,17 @@
+{
+  "retrieval_occurrences": 2877,
+  "administrative_candidate_groups": 2397,
+  "linked_repeat_occurrences": 480,
+  "by_query": {
+    "P1_agentic": 1001,
+    "P2_collaboration": 152,
+    "A1_arxiv": 712,
+    "C1_crossref": 200,
+    "C2_crossref": 200,
+    "E1_action_safety": 218,
+    "P3_action_safety": 394
+  },
+  "human_screened": 0,
+  "full_text_eligibility_adjudicated": 0,
+  "method": "Union exact DOI, normalized exact title, or database identifier; candidate groups are not scientific studies. No exclusions performed."
+}

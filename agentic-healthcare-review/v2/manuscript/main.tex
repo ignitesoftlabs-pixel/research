@@ -1,0 +1,138 @@
+\documentclass[journal,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,cite,amsmath,amssymb,graphicx,booktabs,tabularx,array,xcolor}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\emergencystretch}{2em}\Urlmuskip=0mu plus 1mu
+\title{What Has Been Tested Before Healthcare Agents Act? A Critical Evidence Map of Safety Claims, Execution Boundaries, and Clinical Assurance}
+\author{Anonymous research draft: independent review and clinical verification pending}
+\begin{document}\maketitle\raggedbottom\bstctlcite{IEEEcontrol}
+\begin{abstract}
+Healthcare agents are evaluated using answers, tool trajectories, workflow scores, safety judgments, and clinical surrogates, although these endpoints support different claims about operational authority. This critical evidence map asks what empirical evidence supports safe execution of clinical or care-access actions by language-model agents. A focused protocol amendment and expanded discovery through 10 October 2026 produced 2,877 retrieval occurrences and 2,397 administratively linked candidate groups across PubMed, arXiv, Europe PMC, and bounded Crossref searches. Independent eligibility screening remains pending; the synthesis therefore analyzes a provisional purposive map of 23 empirical reports rather than claiming a completed systematic review. Primary-source checks separate semantic safety, annotated action sequences, sandbox effects, restricted authority invariants, and prospective outcomes. A healthcare GUI benchmark's task accuracy measures annotated sequence matching; a medical-device gateway tests unchanged state and zero operation attempts under a deliberate no-execution boundary. Neither endpoint establishes safe clinical actuation. Existing taxonomies, oversight architectures, assurance cases, and testing-harness proposals substantially overlap with generic new-framework claims. We retain Clinical Action Assurance as a comparison checklist and specify claim-matched denominators, adversarial tests, human oversight measures, and staged clinical evaluation. The principal implication is that evidence must identify the permissible effect and its verification boundary before a capability score is used to justify healthcare autonomy.
+\end{abstract}
+\begin{IEEEkeywords}Healthcare agents, agentic AI, clinical safety, execution verification, evidence synthesis, large language models.\end{IEEEkeywords}
+\section{Introduction}
+\IEEEPARstart{A}{gentic} healthcare systems can retrieve chart information, operate software, coordinate specialist models, recommend medication, and propose changes to clinical systems. Each capability introduces an evaluable transition between information and effect. A correct diagnosis does not establish that the correct patient's record was changed, that institutional authority permitted the change, or that a delayed effect was reconciled. Medical language-model research demonstrates informational capability alongside limitations in clinical reasoning and human interaction \cite{singhal2023,moor2023,hager2024,goh2024}. The evaluation question changes when software can act.
+
+Classical agency and modern reasoning/tool architectures provide the technical background \cite{wooldridge1995,react2023,toolformer2023,rag2020,reflexion2023}. However, an architecture label cannot specify an operating permission. A multi-agent system may only produce advice; a single-agent tool user may create records. Real patient data can ground a sandbox without constituting a prospective clinical deployment. Safety evaluations may measure refusal, classification, or judged output risk without measuring destination effects. These distinctions are material to evidence synthesis, not merely terminology.
+
+The broad review space is already populated. Existing scoping and survey literature covers applications, architectures, evaluation and translation \cite{collaco2026review,xu2026survey,vatsal2026taxonomy,hu2026survey,broadscoping}. Safety-oriented primary work includes MedSentry, TACOS, tiered oversight, and a safety-bounded medical-device gateway \cite{medsentry,tacos,tieredoversight,sdcgateway}. Clinical-testing-harness and ethics-assurance proposals also overlap with generic governance frameworks \cite{clinicalharness,voiceassurance}. Accordingly, we do not claim that agent governance or action authorization is a new concept.
+
+The focused question is: \emph{What empirical evidence supports safe execution of clinical or care-access actions by LLM-based agents, and which action-level safety obligations are evaluated?} The analytical contribution is a claim--evidence--boundary crosswalk. It separates a proposed safeguard, an implemented control, an experimentally challenged property, and an observed clinical outcome. This version is an interim critical evidence map accompanied by a systematic-review development package. Its search, screening, and appraisal limitations remain visible throughout.
+
+\section{Methods and Review Status}
+\subsection{Protocol, scope, and provenance}
+A protocol amendment was frozen on 11 October 2026 before the supplementary searches. It followed exploratory searches and an earlier purposive draft and is therefore not prospective preregistration. The literature cutoff is 10 October 2026; discovery focuses on English reports published from 2022 onward. Older technical and reporting guidance supports interpretation. The public repository preserves the amendment, queries, API logs, occurrence linkage, source metadata, extraction notes, reviewer workbook, original figures, and build scripts.
+
+The empirical stream covers LLM-based systems with external interaction, tool use, structured action proposals, or evaluated agent-safety boundaries. Pure static QA is background. Relevant administrative effects are included because documentation, scheduling, payer and eligibility errors can affect care access. Classical agent-based epidemiological simulation, drug-only discovery, marketing, and unrelated text generation are outside the intended scope. A separate conceptual stream covers reviews, taxonomies and assurance/governance proposals. These sources do not enter empirical outcome denominators.
+
+\subsection{Discovery and administrative linkage}
+The retained PubMed queries retrieved 1,001 and 152 occurrences, and the arXiv query retrieved 712. A supplementary PubMed action/safety query retrieved 394; Europe PMC retrieved 218. Two Crossref relevance-ranked queries each retrieved a bounded 200 records. This yields 2,877 occurrences. Europe PMC overlaps PubMed and preprint indexes; the additional sources are not independent coverage. Crossref retrieval is explicitly bounded, not exhaustive. Publication-date semantics differ from arXiv submission-date semantics. Exact strings, limits, dates and errors are recorded rather than harmonized retrospectively.
+
+Administrative linkage uses exact normalized titles, DOI identifiers and database identifiers. It yields 2,397 candidate groups and 480 linked repeat occurrences. Groups are not independently adjudicated studies: preprint/journal families, revised versions, changed titles and repeated benchmark data need human review. Machine title rules prioritize retrieval only. They neither exclude records nor supply eligibility decisions. The complete worklist retains separate reviewer-A, reviewer-B, consensus, exclusion-reason and source-locator fields.
+
+\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{figures/discovery_status.pdf}
+\caption{Discovery and linkage status. Counts describe retrieved metadata and administrative grouping. Independent eligibility decisions remain pending. This is not a completed PRISMA inclusion flow.}\label{fig:discovery}\end{figure}
+
+\subsection{Provisional evidence map and source checks}
+The current synthesis examines 23 provisional empirical reports: 16 retained from the exploratory map and seven targeted safety/workflow additions. MedAgents and diagnostic AMIE remain background boundary comparators. This targeted subset is not derived from completed screening of the 2,397 candidate groups. It cannot support field prevalence, completeness, or unbiased estimates of the proportion of systems meeting a control requirement.
+
+Extraction records report identity, publication status, environment, action object, endpoint, sample/task units, source locator and interpretation limits. Reading-copy hashes and access failures are logged; licensed full text and abstracts are not redistributed. GPTPlan remains abstract-only. Several new sources are preprints; reported findings apply to the retrieved versions and configurations. Supplementary materials expose these limitations at report level.
+
+The protocol specifies domain-level appraisal rather than a composite quality score. Controls should be categorized as supported, partially supported, not assessed in this extraction, or unclear, each with a locator and reason. Engineering benchmarks must not be assigned clinical trial risk-of-bias ratings. Appropriate design-specific appraisal of any actual clinical study requires independent reviewers. No independent screening, extraction verification, inter-reviewer agreement, completed formal appraisal, or librarian PRESS review is claimed in this version. PRISMA 2020 and PRISMA-S inform eventual reporting; they do not certify that these steps occurred \cite{prisma2020,prismas,press}.
+
+\subsection{Synthesis rules}
+We preserve endpoint names, denominators, test environments, budgets and boundaries. Rates from diagnostic answers, scenario triage, tool calls, task sequences and device-state tests are not pooled. Repeated model outputs are not independent patients. No global absence of prospective patient trials is inferred from this purposive subset. The claim ladder in Fig.~\ref{fig:claims} is an analytical device, not an ordinal quality score: an intentionally non-executing gateway can have strong evidence for its narrow property without supporting actuation.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{figures/claim_boundaries.pdf}
+\caption{Claim-matched evidence boundaries. Examples illustrate different observation units rather than an overall ranking of systems. Higher operational authority requires additional evidence; strong evidence at one boundary cannot be transferred to another.}\label{fig:claims}\end{figure*}
+
+\input{sections/inherited_evidence}
+
+\section{Safety-Focused Additions and Endpoint Boundaries}\label{sec:new}
+\subsection{Threat taxonomies and response safety}
+MedSentry evaluates adversarial multi-agent healthcare behavior using 5,000 prompts, 25 threat categories and four interaction topologies \cite{medsentry}. This expands explicit threat coverage. It does not make attack-response statistics a rate of unsafe committed patient-care actions. The experiment's threat construction, agent configurations and measured response behavior define its inference boundary.
+
+TACOS introduces 21 clinical intent classes and studies classification and tool-selection labels \cite{tacos}. Its private dataset, Korean experiments and reported lack of real-workflow error-cascade evaluation limit transfer to other languages and execution settings. A safety classifier can route or refuse requests, but classifier performance alone does not establish that approved writes reach the correct destination or that downstream effects are harmless.
+
+CareGuardAI uses controller, generation and evaluator stages, releasing responses only when its safety and hallucination ratings satisfy specified thresholds \cite{careguard}. The threshold is a system design choice, not a clinically calibrated risk tolerance merely because its scores are labeled ``safe.'' Output judges can share model biases. Independent validation against clinical adjudication, sensitivity to serious errors, refusal burden and subgroup coverage are necessary before these ratings justify clinical permissions. Response delivery itself is an effect, but it differs from authorizing a transaction.
+
+Medical Malice supplies a large context-aware adversarial resource for Brazilian healthcare \cite{medicalmalice}. It is considered a threat-resource companion rather than an intervention-efficacy report. Generated malicious prompts are neither a prevalence sample of real incidents nor proof that a particular defense prevents harm. Context-specific administrative and discriminatory threats nevertheless justify including care-access consequences in the review scope.
+
+\subsection{Oversight evidence and its uncertainty}
+Tiered Agentic Oversight tests a hierarchical architecture across offline safety benchmarks and a clinician scenario study \cite{tieredoversight}. Five doctors assessed 20 triage scenarios. The paper reports 8/20 correct without feedback and 12/20 with feedback. These are scenario results, not observed patient outcomes. Reported expert agreement varies markedly across constructs: safety-confidence ICC(3,k) is negative, whereas oversight-necessity agreement is stronger. The exact statistical specification and small-sample uncertainty require reviewer appraisal; the headline gain should not conceal weak agreement on subjective safety judgments.
+
+A clinician-in-the-loop design also changes the intervention. Gains cannot be attributed solely to automated architecture when human corrective information is added. Comparisons should disclose whether reviewers saw the same data, how much feedback was available, whether cases were repeated, and the associated time and interruption costs. Improved correctness with feedback is relevant, but it does not establish that a review interface remains effective under routine workload.
+
+\subsection{GUI sequence metrics versus destination effects}
+CarePilot introduces CareFlow's 1,100 healthcare software tasks and an actor--critic architecture with memory \cite{carepilot}. It describes medical annotation, imaging, EHR and laboratory workflows. The reported evaluation defines step-wise accuracy by exact agreement with annotated action labels; task accuracy requires all necessary actions in order. Consequently, its reported metric is interpreted here as annotated sequence accuracy. The paper's execution-oriented motivation and verifier formulation cannot by themselves establish a separately measured rate of correct committed clinical transactions.
+
+This distinction is especially relevant where multiple action sequences can reach an acceptable state. Exact-match scoring can penalize an alternative valid path or accept a matching path that fails in a changed interface. Effect-grounded evaluation would additionally require a destination-state predicate, observation timing, hidden side-effect checks, incomplete/timeout classification, and evidence that the predicate corresponds to a clinically appropriate outcome. These obligations should be extracted rather than inferred from the word ``workflow.''
+
+\subsection{A directly challenged but deliberately restricted boundary}
+The SDC-to-MCP gateway offers a particularly inspectable boundary: it exposes device state and policy-validated dry-run proposals while preventing device operation \cite{sdcgateway}. Its controlled tests exercise 12 resources and seven tool interactions, inspect operation-attempt counters and normalized state digests, and challenge 14 ordered-event cases. The report also separates protocol paths, synthetic device state, authorization lifecycles and hosted-model interpretation.
+
+The no-execution property is narrower than general medical-agent safety. Approved records remain non-executing; identity/reference fields are not authenticated. Finite tests and an abstract workflow do not constitute formal verification of the implementation. Software providers and synthetic states are not physical multi-vendor devices or a validated physiological model. Model repetitions are computational observations, not additional clinical cases. Its evidence supports feasibility and a restricted control boundary under stated assumptions, with no transfer to safe actuation, authenticated clinical authorization or timing guarantees.
+
+This is a useful counterexample to simplistic readiness rankings. A system can robustly enforce ``never execute'' while having no authority to act. Another can score well on task sequences without documenting a state-integrity invariant. The appropriate synthesis records \emph{which property was tested}, rather than collapsing both into a single safety grade.
+
+\subsection{Medication safety surrogates}
+SafeRx-Agent evaluates knowledge-grounded medication recommendation on retrospective MIMIC data using fine-grained medication codes and safety checks \cite{saferx}. Interaction or contraindication metrics are useful content-level surrogates. They remain distinct from correct patient binding, transmitted prescription accuracy, administration, monitoring and observed adverse events. Database-defined interaction rates can also depend on code granularity and medication-set size. Evaluation must retain those choices and measure coverage and clinical appropriateness alongside the surrogate.
+
+\begin{table*}[t]\caption{Illustrative claim--evidence--boundary crosswalk from targeted primary-source checks}\label{tab:claims}\centering\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{.17\textwidth}p{.30\textwidth}Y@{}}\toprule
+Report & Observed or specified endpoint & Claim that the endpoint does not establish \\\midrule
+MedSentry \cite{medsentry} & Adversarial response behavior across specified threats/topologies. & Production incidence, correct transaction commitment, or clinical benefit.\\
+TACOS \cite{tacos} & Clinical intent classification/tool-selection labels. & Real-workflow cascade protection, safe destination writes, multilingual utility.\\
+CarePilot \cite{carepilot} & Exact annotated action and sequence accuracy. & Independently verified clinical post-state or safe effects under interface/state changes.\\
+TAO \cite{tieredoversight} & Safety benchmarks; 20 clinician-evaluated triage scenarios. & Prospective patient outcomes or benefits independent of added human feedback.\\
+CareGuardAI \cite{careguard} & Judged output safety/hallucination thresholds. & Calibrated clinical harm tolerance or transaction authorization.\\
+SDC-to-MCP \cite{sdcgateway} & Zero attempted operations, unchanged digests, controlled lifecycle tests. & Safe device actuation, authenticated approvals, physical-device or timing validation.\\
+SafeRx-Agent \cite{saferx} & Medication prediction and interaction/contraindication surrogates. & Safe transmitted prescriptions or observed adverse-event reduction.\\\bottomrule
+\end{tabularx}\end{table*}
+
+\section{Existing Frameworks and the Novelty Boundary}
+An evidence review should first demonstrate that its organizing concept adds a useful comparison, rather than rename familiar controls. Table~\ref{tab:overlap} documents overlap with safety classification, threat testing, restricted authority, assurance arguments and staged evaluation. The broad scoping preprint covers architecture and translation; the current conceptual stream also flags a very recent governance review for full-text/status assessment. These unresolved overlaps constrain any claim of comprehensive novelty.
+
+\begin{table*}[t]\caption{Overlap audit: CAA is retained as a checklist, not a first safety framework}\label{tab:overlap}\centering\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{.21\textwidth}p{.32\textwidth}Y@{}}\toprule
+Primary work & Already relevant to action assurance & Boundary retained in this review \\\midrule
+MedSentry / TACOS \cite{medsentry,tacos} & Threat coverage, safety classification and routing. & Behavior/classification tests are not committed-effect or clinical-outcome tests.\\
+SDC-to-MCP \cite{sdcgateway} & Explicit authority boundary, freshness, provenance, approvals and state checks. & Directly challenges restricted no-execution; cannot support actuation.\\
+Clinical testing harnesses \cite{clinicalharness} & Trajectory observability, escalation and staged evidence. & Conceptual letter; not a tested clinical intervention.\\
+Voice-agent ethics assurance \cite{voiceassurance} & Structured claims, arguments and evidence. & Assurance case does not replace empirical clinical evaluation.\\
+HAARF \cite{haarf} & Proposed security/governance verification criteria. & Preprint; full reading access blocked; not assumed regulatory endorsement.\\
+Existing reviews \cite{collaco2026review,xu2026survey,hu2026survey,broadscoping} & Architecture, applications, evaluation and translation. & Present focus is endpoint-to-authority mapping; completeness remains pending.\\\bottomrule
+\end{tabularx}\end{table*}
+
+The defensible analytical value is a reproducible correspondence between a safety claim and its observation boundary. The checklist below is a synthesis of existing principles. Its contract notation helps make extraction and counterexample tests explicit, but the notation and accompanying synthetic software do not constitute a clinical discovery or evidence that the checklist improves outcomes.
+
+\input{sections/failures}
+\input{sections/checklist}
+\input{sections/evaluation}
+
+\section{Discussion, Appraisal Gaps, and Publication Readiness}
+\subsection{The central evidence distinction}
+The provisional reports motivate a distinction between evidence of capability, evidence of a restricted invariant, and evidence supporting an operational permission. These categories are complementary. An accurate medication recommendation may support decision assistance without supporting prescription transmission. A verified sandbox record change may support technical integration without supporting clinical appropriateness. A no-execution invariant may support a safe observation boundary without permitting treatment actuation. Claims must remain attached to the tested context.
+
+The distinction also protects against overclaiming absence. A missing extraction entry is not proof that a source lacks a safeguard. A report can describe a control without implementing it, implement it without adversarial testing, or test it under finite conditions. Completing the review requires domain-level appraisal with source locators, unresolved values and reviewer explanations. Aggregate gap counts should follow that appraisal, not precede it.
+
+\subsection{What would change the conclusion}
+Evidence for bounded execution would be strengthened by authenticated approvals tied to exact actions, destination-enforced preconditions, verified committed-state predicates, and adversarial tests of wrong identity, stale state, uncertain commitment and failed handoff. Clinical permission additionally requires appropriate domain judgment, acceptable review burden, prospective operational evidence and follow-up of patient or access outcomes. Conventional automation and existing human workflows should be comparators where relevant. More agents or larger models are not substitutes for these measurements.
+
+Strong results must remain conditional on their implementation versions and environment. Tool, memory, retrieval or policy changes can alter the evaluated intervention. Shared benchmark data and related report families introduce dependence. Apparent architecture improvements can also reflect unequal tokens, tools, feedback or clinician assistance. Reproducibility requires those inputs, failure trajectories, judging procedures and budgets to be preserved.
+
+\subsection{Limitations and required completion work}
+This is an interim critical map, not a completed systematic review. The 23-report subset is purposive; 2,397 candidate groups await independent eligibility review. English-only scope, evolving preprints, administrative linkage and bounded Crossref retrieval limit completeness. Scopus, Embase, IEEE Xplore and ACM searches have not been executed here; prepared strings and author-access tasks are provided. Source-version eligibility and study-family linkage need adjudication. One empirical report is abstract-only, and a conceptual preprint remains inaccessible in full text.
+
+AI assisted discovery, provisional extraction, synthesis, writing and software creation. No independent clinical verification or formal design-specific risk-of-bias appraisal has been completed. No pooled efficacy estimate, clinical experiment or prospective validation of CAA is claimed. The synthetic implementation tests a single in-memory operation; its software tests are retained as an illustrative supplement and cannot support a safety-effectiveness claim. The manuscript must not be relabeled as systematic or submission-ready until the documented research and author tasks are actually completed.
+
+The next phase is concrete: search the remaining databases, obtain librarian search review, independently screen all candidate groups, resolve report families/versions, obtain full text, verify extraction with clinical expertise, complete appropriate appraisal, and then rewrite the inclusion flow and results around the final evidence set. Journal fit, current indexing/quartile status, review article eligibility, author contributions, funding, conflicts and AI disclosures must be checked by the submitting authors. A Q1 ambition is a target, not an acceptance prediction.
+
+\section{Conclusion}
+Healthcare-agent evidence should specify what was observed before it is used to justify operational authority. Annotated sequences, judged responses, sandbox effects and restricted no-execution tests answer different questions. The current critical map supplies a transparent comparison and a reproducible completion package; its most important contribution is to prevent those evidence boundaries from being silently crossed. Final systematic conclusions require the independent screening and appraisal recorded as pending.
+
+\section*{Data, Code, and Disclosures}
+The versioned research package is at \url{https://github.com/ignitesoftlabs-pixel/research/tree/main/agentic-healthcare-review/v2}. No patient-level data or licensed reading copies are redistributed. Author identity and affiliations are unconfirmed; the repository account is not an author designation. Contributions, conflicts, funding and journal-required AI declarations must be completed before submission. No journal submission has been made.
+\bibliographystyle{IEEEtran}\bibliography{references}\end{document}

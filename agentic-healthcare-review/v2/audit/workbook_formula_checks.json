@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "a": "Include",
+      "b": null,
+      "c": null,
+      "expected": "Pending two reviewers",
+      "actual": "Pending two reviewers"
+    },
+    {
+      "a": "Include",
+      "b": "Exclude",
+      "c": null,
+      "expected": "Resolve disagreement",
+      "actual": "Resolve disagreement"
+    },
+    {
+      "a": "Include",
+      "b": "Exclude",
+      "c": "Unclear",
+      "expected": "Unclear",
+      "actual": "Unclear"
+    },
+    {
+      "a": "Include",
+      "b": "Include",
+      "c": null,
+      "expected": "Include",
+      "actual": "Include"
+    }
+  ],
+  "pending": 2397,
+  "formula_errors": 0
+}

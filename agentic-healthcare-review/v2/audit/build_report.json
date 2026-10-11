@@ -1,0 +1,19 @@
+{
+  "built_at": "2026-10-11T18:08:56.505079+00:00",
+  "outputs": [
+    {
+      "file": "Clinical_Action_Evidence_Review.pdf",
+      "pages": 12,
+      "bytes": 457998,
+      "sha256": "73518f9fde64179b4a04e0bf79c7c19590d89e6052c5669c0fb584271d26299d",
+      "undefined_or_overfull": []
+    },
+    {
+      "file": "Clinical_Action_Review_Supplement.pdf",
+      "pages": 7,
+      "bytes": 237532,
+      "sha256": "af44df497c94298df6158221e34dcb143c6882ffb646b1d146b7b9a244f6bde8",
+      "undefined_or_overfull": []
+    }
+  ]
+}

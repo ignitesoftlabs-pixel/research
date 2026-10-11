@@ -1,0 +1,6 @@
+{
+  "P3_action_safety": "((\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract] OR LLM[Title/Abstract] OR agentic[Title/Abstract]) AND (agent[Title/Abstract] OR agents[Title/Abstract] OR agentic[Title/Abstract] OR \"tool use\"[Title/Abstract] OR \"computer use\"[Title/Abstract]) AND (healthcare[Title/Abstract] OR clinical[Title/Abstract] OR medical[Title/Abstract] OR patient[Title/Abstract]) AND (safety[Title/Abstract] OR safe[Title/Abstract] OR risk[Title/Abstract] OR execution[Title/Abstract] OR oversight[Title/Abstract] OR authorization[Title/Abstract] OR \"prompt injection\"[Title/Abstract])) AND (\"2022/01/01\"[Date - Publication] : \"2026/10/10\"[Date - Publication])",
+  "E1_action_safety": "(TITLE_ABS:\"large language model\" OR TITLE_ABS:LLM OR TITLE_ABS:agentic) AND (TITLE_ABS:agent OR TITLE_ABS:agents OR TITLE_ABS:\"tool use\" OR TITLE_ABS:\"computer use\") AND (TITLE_ABS:healthcare OR TITLE_ABS:clinical OR TITLE_ABS:medical OR TITLE_ABS:patient) AND (TITLE_ABS:safety OR TITLE_ABS:execution OR TITLE_ABS:oversight OR TITLE_ABS:authorization OR TITLE_ABS:\"prompt injection\") AND FIRST_PDATE:[2022-01-01 TO 2026-10-10]",
+  "C1_crossref": "agentic healthcare clinical safety",
+  "C2_crossref": "large language model medical agent execution safety"
+}

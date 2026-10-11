@@ -1,0 +1,449 @@
+\documentclass[journal,onecolumn,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}\usepackage{lmodern,booktabs,longtable,array,graphicx}
+\usepackage[hyphens]{url}\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}\Urlmuskip=0mu plus 1mu
+\title{Supplementary Research Record: Clinical Action Evidence Review}
+\author{Interim development package; independent screening and appraisal pending}
+\begin{document}\maketitle
+\section{Status and count definitions}
+The cutoff is 10 October 2026; the supplementary retrieval occurred on 11 October UTC. A protocol amendment was frozen after exploratory work, not prospectively preregistered. There are 2,877 retrieval occurrences, 2,397 administrative candidate groups and 480 linked repeat occurrences. Exact DOI/title/database-ID linkage is not scientific study-family deduplication. No independent human eligibility decisions have been recorded. The main paper's 23-report map is purposive and provisional, not a completed systematic inclusion set.
+\section{Executed queries}
+Exact strings follow. Crossref queries use a relevance-ranked limit of 200 each and publication-date filters from 2022-01-01 through 2026-10-10; they are not exhaustive. Europe PMC overlaps PubMed and preprint indexes. Full API URLs, date semantics, reported totals, retrieved counts and errors are in the repository search logs.
+
+\subsection*{P1\_agentic}
+\begin{quote}\small\raggedright ((agentic[Title/Abstract] OR "LLM agent"[Title/Abstract] OR "LLM agents"[Title/Abstract] OR "large language model agent"[Title/Abstract] OR "large language model agents"[Title/Abstract] OR "tool-using"[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract] OR patient[Title/Abstract])) AND ("2022/01/01"[Date - Publication] : "2026/10/10"[Date - Publication])\end{quote}
+
+
+\subsection*{P2\_collaboration}
+\begin{quote}\small\raggedright (("multi-agent"[Title/Abstract] OR multiagent[Title/Abstract]) AND ("large language model"[Title/Abstract] OR "large language models"[Title/Abstract] OR LLM[Title/Abstract] OR LLMs[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract])) AND ("2022/01/01"[Date - Publication] : "2026/10/10"[Date - Publication])\end{quote}
+
+
+\subsection*{A1\_arxiv}
+\begin{quote}\small\raggedright ((ti:agentic OR abs:agentic OR ti:"medical agent" OR ti:"clinical agent" OR ti:"LLM agents" OR ti:"multi-agent") AND (ti:healthcare OR ti:medical OR ti:clinical OR abs:"electronic health record" OR abs:"clinical tool")) AND submittedDate:[202201010000 TO 202610102359]\end{quote}
+
+
+\subsection*{P3\_action\_safety}
+\begin{quote}\small\raggedright (("large language model"[Title/Abstract] OR "large language models"[Title/Abstract] OR LLM[Title/Abstract] OR agentic[Title/Abstract]) AND (agent[Title/Abstract] OR agents[Title/Abstract] OR agentic[Title/Abstract] OR "tool use"[Title/Abstract] OR "computer use"[Title/Abstract]) AND (healthcare[Title/Abstract] OR clinical[Title/Abstract] OR medical[Title/Abstract] OR patient[Title/Abstract]) AND (safety[Title/Abstract] OR safe[Title/Abstract] OR risk[Title/Abstract] OR execution[Title/Abstract] OR oversight[Title/Abstract] OR authorization[Title/Abstract] OR "prompt injection"[Title/Abstract])) AND ("2022/01/01"[Date - Publication] : "2026/10/10"[Date - Publication])\end{quote}
+
+
+\subsection*{E1\_action\_safety}
+\begin{quote}\small\raggedright (TITLE\_ABS:"large language model" OR TITLE\_ABS:LLM OR TITLE\_ABS:agentic) AND (TITLE\_ABS:agent OR TITLE\_ABS:agents OR TITLE\_ABS:"tool use" OR TITLE\_ABS:"computer use") AND (TITLE\_ABS:healthcare OR TITLE\_ABS:clinical OR TITLE\_ABS:medical OR TITLE\_ABS:patient) AND (TITLE\_ABS:safety OR TITLE\_ABS:execution OR TITLE\_ABS:oversight OR TITLE\_ABS:authorization OR TITLE\_ABS:"prompt injection") AND FIRST\_PDATE:[2022-01-01 TO 2026-10-10]\end{quote}
+
+
+\subsection*{C1\_crossref}
+\begin{quote}\small\raggedright agentic healthcare clinical safety\end{quote}
+
+
+\subsection*{C2\_crossref}
+\begin{quote}\small\raggedright large language model medical agent execution safety\end{quote}
+
+
+\section{Searches and review work not completed}
+Scopus, Embase, IEEE Xplore and ACM Digital Library are planned searches, not executed searches. Ready-to-run strings are in the author-access protocol file. Librarian PRESS review, independent dual screening and extraction verification, clinical adjudication, blocked full-text retrieval, version/study-family linkage, and design-appropriate formal appraisal remain pending. The workbook starts with blank reviewer fields. No agreement statistic is calculated from machine priorities.
+\section{Provisional report-level extraction}
+The following notes identify observations and interpretation limits. They are AI-assisted provisional extraction, not completed formal risk-of-bias judgments. Publication status is report status, not a quality ranking. Access and source-version checks are preserved in the evidence metadata and reading logs. Original 16 report IDs are retained; S01 and S12 are background comparators. New reports retain stable IDs S19--S25.
+
+\subsection*{S02: AgentClinic}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} simulated patients\par
+
+\noindent\textbf{Endpoint:} diagnosis\par
+
+\noindent\textbf{Reported anchor:} interactive diagnostic benchmark\par
+
+\noindent\textbf{Source locator:} Primary journal\par
+
+\noindent\textbf{Interpretation boundary:} Simulated patient conversations and information acquisition; no prospective live autonomous care established here.\par
+
+\noindent\textbf{Primary source:} \url{https://www.nature.com/articles/s41746-026-02674-7}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S03: MedRAX}
+
+\noindent\textbf{Publication status:} conference\par
+
+\noindent\textbf{Environment:} image-tool sandbox\par
+
+\noindent\textbf{Endpoint:} task answer\par
+
+\noindent\textbf{Reported anchor:} 2500 queries\par
+
+\noindent\textbf{Source locator:} Primary conference\par
+
+\noindent\textbf{Interpretation boundary:} Tool use on medical images evaluates bounded benchmark outputs, not deployed radiology decisions.\par
+
+\noindent\textbf{Primary source:} \url{https://proceedings.mlr.press/v267/fallahpour25a.html}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S04: MedAgentBench}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} EHR sandbox\par
+
+\noindent\textbf{Endpoint:} task success\par
+
+\noindent\textbf{Reported anchor:} 300 tasks; 100 profiles\par
+
+\noindent\textbf{Source locator:} Primary journal / preprint\par
+
+\noindent\textbf{Interpretation boundary:} Original task success concerns scripted sandbox effects.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2501.14654}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S05: MedAgentBench v2}
+
+\noindent\textbf{Publication status:} conference\par
+
+\noindent\textbf{Environment:} EHR sandbox\par
+
+\noindent\textbf{Endpoint:} task success\par
+
+\noindent\textbf{Reported anchor:} 91\% original without memory; 98\% with feedback memory; 266/300 (88.67\%) new tasks\par
+
+\noindent\textbf{Source locator:} Sections 2.3, 3.1–3.3\par
+
+\noindent\textbf{Interpretation boundary:} Different task sets and memory conditions must not be merged into one rate.\par
+
+\noindent\textbf{Primary source:} \url{https://psb.stanford.edu/psb-online/proceedings/psb26/chen_eric.pdf}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S06: PhysicianBench}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} real-record EHR sandbox\par
+
+\noindent\textbf{Endpoint:} pass@1\par
+
+\noindent\textbf{Reported anchor:} 100 tasks; 670 checkpoints; average 27 calls; best 46\%\par
+
+\noindent\textbf{Source locator:} Abstract; full paper\par
+
+\noindent\textbf{Interpretation boundary:} Execution-grounded tasks using real records remain benchmark evaluations.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2605.02240}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S07: HealthAgentBench}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} container environments\par
+
+\noindent\textbf{Endpoint:} task success\par
+
+\noindent\textbf{Reported anchor:} 54 tasks; 7 categories; best approximately 42\%\par
+
+\noindent\textbf{Source locator:} Abstract; full paper\par
+
+\noindent\textbf{Interpretation boundary:} Composite research and healthcare tasks; aggregate is not clinical efficacy.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2606.31179}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S08: PatientAgentBench}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} simulated patients\par
+
+\noindent\textbf{Endpoint:} triage-quality pass\par
+
+\noindent\textbf{Reported anchor:} 1200 scenarios; 10 models; triage-quality pass rates 32–88\%\par
+
+\noindent\textbf{Source locator:} Abstract; results\par
+
+\noindent\textbf{Interpretation boundary:} Dialogue and triage outputs do not verify downstream patient care.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2607.25485}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S09: MedCTA}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} tool benchmark\par
+
+\noindent\textbf{Endpoint:} trajectory/output\par
+
+\noindent\textbf{Reported anchor:} 107 tasks; 5 tools\par
+
+\noindent\textbf{Source locator:} Abstract; benchmark design\par
+
+\noindent\textbf{Interpretation boundary:} Process evaluation complements final outputs; neither alone establishes clinical utility.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2606.11702}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S10: MIRA}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} retrospective-record simulation\par
+
+\noindent\textbf{Endpoint:} diagnosis/management\par
+
+\noindent\textbf{Reported anchor:} over 500 cases; 11 tools; over 85000 action options\par
+
+\noindent\textbf{Source locator:} Main results; methods\par
+
+\noindent\textbf{Interpretation boundary:} Retrospective evaluation and physician comparison do not establish prospective autonomous practice.\par
+
+\noindent\textbf{Primary source:} \url{https://www.nature.com/articles/s41586-026-10675-5}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S11: On-premise agent}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} MIMIC-derived simulation\par
+
+\noindent\textbf{Endpoint:} selective diagnosis\par
+
+\noindent\textbf{Reported anchor:} threshold 0.90: coverage 49.4\%; diagnostic accuracy 98.9\%\par
+
+\noindent\textbf{Source locator:} Abstract; selective-autonomy results\par
+
+\noindent\textbf{Interpretation boundary:} Retained diagnostic accuracy is not the unsafe committed-action rate.\par
+
+\noindent\textbf{Primary source:} \url{https://www.nature.com/articles/s41591-026-04609-x}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S13: AMIE management}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} multivisit patient actors\par
+
+\noindent\textbf{Endpoint:} management quality\par
+
+\noindent\textbf{Reported anchor:} longitudinal actor-based evaluation\par
+
+\noindent\textbf{Source locator:} Main results; methods\par
+
+\noindent\textbf{Interpretation boundary:} Recommendations and simulated follow-up are distinct from live execution.\par
+
+\noindent\textbf{Primary source:} \url{https://www.nature.com/articles/s41586-026-10764-5}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S14: MAI-DxO}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} published diagnostic cases\par
+
+\noindent\textbf{Endpoint:} diagnosis/modeled cost\par
+
+\noindent\textbf{Reported anchor:} 304 NEJM cases\par
+
+\noindent\textbf{Source locator:} Benchmark design\par
+
+\noindent\textbf{Interpretation boundary:} Simulated testing costs are not observed healthcare expenditure or clinical outcomes.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2506.22405}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S15: GPTPlan}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} retrospective plan optimization\par
+
+\noindent\textbf{Endpoint:} dose-plan quality\par
+
+\noindent\textbf{Reported anchor:} 12 lung IMRT; 5 cervical VMAT\par
+
+\noindent\textbf{Source locator:} Abstract only\par
+
+\noindent\textbf{Interpretation boundary:} Abstract-only extraction; no claim of treatment delivery or patient benefit.\par
+
+\noindent\textbf{Primary source:} \url{https://pubmed.ncbi.nlm.nih.gov/40073507/}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S16: MedAgentBoard}
+
+\noindent\textbf{Publication status:} conference\par
+
+\noindent\textbf{Environment:} offline mixed tasks\par
+
+\noindent\textbf{Endpoint:} task-specific metrics\par
+
+\noindent\textbf{Reported anchor:} multi-agent and conventional comparators\par
+
+\noindent\textbf{Source locator:} Primary conference / preprint\par
+
+\noindent\textbf{Interpretation boundary:} Multiple agents do not imply benefit independent of task, budget, or comparator.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2505.12371}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S17: MedAssist}
+
+\noindent\textbf{Publication status:} journal\par
+
+\noindent\textbf{Environment:} offline mixed benchmarks\par
+
+\noindent\textbf{Endpoint:} benchmark scores\par
+
+\noindent\textbf{Reported anchor:} vOpenManus configuration\par
+
+\noindent\textbf{Source locator:} Primary journal\par
+
+\noindent\textbf{Interpretation boundary:} Framework evaluation does not establish safety of an institutional workflow.\par
+
+\noindent\textbf{Primary source:} \url{https://www.nature.com/articles/s41746-026-02443-6}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S18: HealthAdminBench}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} four GUI replicas\par
+
+\noindent\textbf{Endpoint:} task/subtask success\par
+
+\noindent\textbf{Reported anchor:} 135 tasks; 1698 points; best task 36.3\%; highest subtask 82.8\%\par
+
+\noindent\textbf{Source locator:} Abstract; benchmark/results\par
+
+\noindent\textbf{Interpretation boundary:} Task best is Claude Opus 4.6 CUA; subtask best is GPT-5.4 CUA: different configurations.\par
+
+\noindent\textbf{Primary source:} \url{https://arxiv.org/abs/2604.09937}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S19: MedSentry}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Adversarial multi-agent simulation\par
+
+\noindent\textbf{Endpoint:} Attack/defense responses\par
+
+\noindent\textbf{Reported anchor:} 5,000 prompts; 25 threat categories; four topologies\par
+
+\noindent\textbf{Source locator:} Abstract; benchmark and experimental sections\par
+
+\noindent\textbf{Interpretation boundary:} Threat coverage and attack-response behavior do not establish an unsafe committed-action rate.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2505.20824v1}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S20: TACOS}
+
+\noindent\textbf{Publication status:} conference\par
+
+\noindent\textbf{Environment:} Korean clinical intent classification\par
+
+\noindent\textbf{Endpoint:} Intent and tool-selection labels\par
+
+\noindent\textbf{Reported anchor:} 21 classes\par
+
+\noindent\textbf{Source locator:} Sections 6.1–6.3; Tables 1–2; Limitations\par
+
+\noindent\textbf{Interpretation boundary:} Private dataset; Korean-only experiments; real-workflow error cascades and clinician utility not yet evaluated.\par
+
+\noindent\textbf{Primary source:} \url{https://doi.org/10.18653/v1/2025.emnlp-industry.124}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S21: Safety-bounded SDC-to-MCP}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Synthetic devices and software SDC providers\par
+
+\noindent\textbf{Endpoint:} No-execution invariant and controlled state lifecycle\par
+
+\noindent\textbf{Reported anchor:} 12 resources; seven tool interactions; 14 ordered-event cases; 28 task–scenario pairs\par
+
+\noindent\textbf{Source locator:} Sections 5.1–5.4, 6.2–6.4; Tables 5–11\par
+
+\noindent\textbf{Interpretation boundary:} Zero operation attempts and unchanged state digests support the restricted no-execution boundary, not safe actuation, authentication or clinical timing.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2609.31358v1}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S22: CarePilot}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Annotated healthcare GUI workflows\par
+
+\noindent\textbf{Endpoint:} Exact annotated step/sequence match\par
+
+\noindent\textbf{Reported anchor:} 1,100 tasks; required sequences span 8–24 actions\par
+
+\noindent\textbf{Source locator:} Dataset section; Evaluation Metrics; Tables 2–5\par
+
+\noindent\textbf{Interpretation boundary:} Task accuracy requires all annotated actions in order. Execution-oriented motivation is not itself a verified committed-state or patient outcome endpoint.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2603.24157v1}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S23: CareGuardAI}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Patient-facing response benchmarks\par
+
+\noindent\textbf{Endpoint:} Risk/hallucination judgments and release threshold\par
+
+\noindent\textbf{Reported anchor:} SRA and HRA release thresholds $\leq$2\par
+
+\noindent\textbf{Source locator:} Abstract; Fig. 1; benchmark evaluation\par
+
+\noindent\textbf{Interpretation boundary:} Response gating is not transaction authorization. LLM-based safety ratings need independent clinical adjudication and calibration.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2604.26959v1}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S24: Tiered Agentic Oversight}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Offline safety benchmarks and clinician scenario study\par
+
+\noindent\textbf{Endpoint:} Safety output scores and triage correctness\par
+
+\noindent\textbf{Reported anchor:} Five doctors; 20 scenarios; 8/20 correct without and 12/20 with feedback\par
+
+\noindent\textbf{Source locator:} Section 4; Fig. 7; benchmark methods\par
+
+\noindent\textbf{Interpretation boundary:} Scenario correctness is not live patient benefit. Expert confidence agreement was weak: reported ICC(3,k) $-$0.101; requires methodological review.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2506.12482v2}\par
+\noindent\textbf{Human verification:} pending.
+
+\subsection*{S25: SafeRx-Agent}
+
+\noindent\textbf{Publication status:} preprint\par
+
+\noindent\textbf{Environment:} Retrospective MIMIC-III/IV medication recommendation\par
+
+\noindent\textbf{Endpoint:} Medication-set prediction and safety surrogates\par
+
+\noindent\textbf{Reported anchor:} Fourth-level ATC generation; interaction/contraindication checks\par
+
+\noindent\textbf{Source locator:} Abstract; methods and experimental sections\par
+
+\noindent\textbf{Interpretation boundary:} Predicted medication sets and interaction metrics do not establish correctness of transmitted prescriptions or observed adverse events.\par
+
+\noindent\textbf{Primary source:} \url{http://arxiv.org/abs/2605.29146v2}\par
+\noindent\textbf{Human verification:} pending.
+
+\section{Appraisal interface and completion rules}
+For each final included report, reviewers must record the action object and authority, environment fidelity, ground-truth definition, sample/denominator, comparator and resource budget, judge validation, failure and omission handling, version dependence and prospective outcome evidence. Each domain receives a supported, partially supported, not-assessed-in-this-extraction or unclear value, with a reason and page/section locator. Not assessed must never be interpreted as source absence. Do not generate a composite quality score or apply trial risk-of-bias tools to engineering benchmarks.
+
+Actual clinical investigations require appropriate design-specific appraisal and clinical expertise. Related benchmark datasets, preprint/journal versions and repeated stochastic runs require linkage before any count or confidence interval is interpreted. The final search-derived inclusion set must replace the provisional map; all figure/table denominators and the inclusion flow must then be regenerated.
+\section{Conceptual overlap and access limits}
+The novelty register compares MedSentry, TACOS, the SDC-to-MCP gateway, clinical testing harnesses, voice-agent ethics assurance, HAARF and existing reviews. HAARF full reading access was blocked. The clinical-testing-harness source is a conceptual letter. Calling a proposal a standard does not establish official regulatory endorsement. A recently published F1000 governance review requires full-text and peer-review-status assessment. CAA is an analytical checklist, not a claimed first framework or evaluated safety intervention.
+
+PRISMA-trAIce is not treated as an endorsed PRISMA extension. A primary JMIR letter, DOI \url{https://doi.org/10.2196/104210}, challenges that endorsement. AI-assisted work is disclosed directly; reporting guidance does not turn incomplete review procedures into completed ones.
+\section{Synthetic software and reproducibility}
+The parent package's in-memory reference implementation contains one synthetic follow-up task operation with patient/encounter checks, state versions, exact-payload approval, idempotency and receipt verification. Its 18 negative/retry tests are software examples. They contain no LLM, live EHR, authenticated clinical identities or clinical validation. They support no efficacy or patient-safety claim in this review.
+
+The snapshot can be rebuilt using the scripts documented in the v2 README. No patient-level data, full copyrighted reading copies or abstracts are redistributed. Public files contain primary metadata, original extraction notes, search logs, worklists, figures, manuscript sources and build records. Author identity, contributions, conflicts, funding and journal-specific disclosures remain uncompleted.
+\end{document}

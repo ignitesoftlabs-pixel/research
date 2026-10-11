@@ -1,0 +1,16 @@
+sdcgateway True True 
+carepilot True True 
+medsentry True True 
+tacos True True 
+careguard True True 
+medicalmalice True True 
+tieredoversight True True 
+voiceassurance True True 
+saferx True True 
+mcpfhir True True 
+broadscoping True True 
+press True True 
+haarf True False 
+prismatraice True True 
+clinicalharness True True 
+prismas True True 
