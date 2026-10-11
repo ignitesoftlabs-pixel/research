@@ -1,0 +1,42 @@
+\section{Evaluation and Translation Agenda}
+\subsection{Choose the unit and denominator before scoring}
+Evaluation should distinguish content correctness, valid tool invocation, correct destination action, completed workflow, and patient outcomes. A single task rate cannot summarize all five. Table~\ref{tab:metrics} proposes a denominator-aware vocabulary. Report omissions, abstentions, and excluded episodes; otherwise a system can appear safer merely by attempting fewer difficult cases.
+
+For a diagnostic selective-prediction illustration with retention decision $q_i\in\{0,1\}$, define coverage and retained diagnostic error as
+\begin{align}
+C&=\frac{1}{n}\sum_{i=1}^{n}q_i,\\
+R_{\mathrm{dx}}&=\frac{\sum_i q_i\,\mathbf{1}(\widehat{y}_i\ne y_i)}{\sum_i q_i}.
+\end{align}
+$R_{\mathrm{dx}}$ is undefined if no cases are retained. Such a conditional diagnostic measure differs from an action measure such as
+\begin{equation}
+R_{\mathrm{effect}}=\frac{N_{\mathrm{unsafe\ committed\ effects}}}{N_{\mathrm{committed\ effects\ assessed}}}.
+\end{equation}
+An episode-level analysis must additionally include inappropriate omissions, timing, and consequences. Low retained diagnostic error cannot be transferred to $R_{\mathrm{effect}}$ without directly evaluating the relevant actions. Calibration and selective prediction literature provide useful methods \cite{calibration2017,selective2017}; semantic uncertainty research supplies additional informational signals \cite{semanticentropy2024}. Their interpretation requires validation under the actual clinical workflow and distribution.
+
+\begin{table}[t]\caption{Endpoint vocabulary and required denominators}\label{tab:metrics}\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.35\columnwidth}Y@{}}\toprule
+Endpoint & Required reporting unit \\ \midrule
+Content correctness & Labeled answers/cases; label source.\\
+Tool validity & Attempted calls; protocol and arguments.\\
+Correct committed effect & Assessed destination effects; state predicate.\\
+Workflow completion & Eligible episodes, full success criteria, timeout.\\
+Selective coverage/risk & Eligible versus retained cases; exclusions.\\
+Unsafe action/omission & Actions and eligible episodes; harm definition.\\
+Human burden & Review time, interruptions, fallback load.\\
+Patient/access outcome & Patients/episodes and follow-up; comparator.\\ \bottomrule
+\end{tabularx}\end{table}
+
+\subsection{Comparison and adjudication}
+Comparators should include conventional automation, single-model assistance, and the existing human workflow when relevant. Budgets must be matched or explicitly analyzed: tool calls, tokens, time, retrieval access, feedback, and human oversight can determine an apparent architecture advantage. Model, prompt, memory, policy, tool, and evidence versions should be fixed and reported. Repeated stochastic runs are computational repeats, not additional independent patients.
+
+Action adjudication needs blinded clinical expertise where appropriateness is material, execution-grounded checks where state changes matter, and a reproducible definition of harm and omission. Automated judges require validation against an appropriate human standard; overall agreement can conceal poor detection of rare serious errors. Report confidence intervals at the correct clustering level, distributions of failure severity, and incomplete/timeout trajectories. Subgroup analyses should evaluate both coverage and errors because selective routing can shift workload or access unequally.
+
+\subsection{Staged clinical translation}
+Figure~\ref{fig:translation} proposes six stages. Task specification defines eligible cases, allowable effects, human responsibilities, and failure recovery. Offline testing combines clinically meaningful tasks with adverse-state and security stress tests. Shadow evaluation measures performance under real workflow timing without committing effects. A clinician-approved pilot then assesses actual operational consequences with bounded permissions and monitored fallback. Prospective comparative evaluation examines patient, access, workload, and resource outcomes. Ongoing monitoring revalidates changes to models, memory, tools, data distributions, and institutional policies.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/fig5_translation.pdf}
+\caption{Proposed staged translation, with evidence obligations at each stage. Progression is conditional on workflow-specific results and governance; these stages are not a regulatory certification pathway.}\label{fig:translation}
+\end{figure*}
+
+Reporting guidance should match the actual study. DECIDE-AI informs early clinical evaluation \cite{decideai2022}; SPIRIT-AI and CONSORT-AI support protocol and trial reporting \cite{spiritai2020,consortai2020}, alongside updated general trial guidance \cite{consort2025}. TRIPOD-LLM and STARD-AI address relevant prediction and diagnostic reporting \cite{tripodllm2025,stardai2025}. These guidelines improve transparent descriptions; they do not substitute for suitable design, clinical oversight, or evidence of benefit.

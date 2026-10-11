@@ -1,0 +1,21 @@
+\section{Introduction}
+\IEEEPARstart{A}{gentic} AI changes the unit of clinical evaluation. A medical language model may produce a diagnosis; an agent may decide which chart to inspect, request additional evidence, invoke an imaging tool, draft an order, and attempt to change a destination system. The correctness of the final sentence cannot establish the correctness of this entire sequence. Medical language-model and foundation-model research demonstrates substantial informational capability while also identifying limitations in clinical reasoning and human interaction \cite{singhal2023,moor2023,hager2024,goh2024}. The question for healthcare agents is what additional evidence justifies their ability to cause effects.
+
+Agency predates language models. Classical accounts emphasize situated, goal-directed interaction \cite{wooldridge1995}. Recent architectures combine reasoning and acting, learned tool use, retrieval, and feedback memory \cite{react2023,toolformer2023,rag2020,reflexion2023}. These components can make otherwise inaccessible information available and support complex workflows. They also introduce new failure surfaces: selecting the wrong patient, reading obsolete evidence, reusing an approval after its context changes, and reporting success before a destination confirms completion. A competent planner may still issue an unauthorized action. A correctly authorized operation may still be clinically inappropriate.
+
+Several reviews already characterize healthcare agents. A scoping review examines applications and conceptual distinctions \cite{collaco2026review}; broader surveys organize agents, architectures, evaluation, and translation challenges \cite{xu2026survey,vatsal2026taxonomy,hu2026survey}. This literature precludes a credible claim that healthcare agent review or governance is unexplored. Our contribution is a complementary analysis organized around \emph{action assurance}: a proposed operation, an observed effect, and the institutional authority that permits that effect. Table~\ref{tab:position} makes the intended distinction explicit without assuming that prior reviews omit safety or tool use.
+
+We ask three questions. First, what kind of agency and destination effect do empirical reports actually evaluate? Second, which failure mechanisms emerge between a plausible proposal and a verified, permissible effect? Third, how should software controls and clinical evaluation be connected before agents receive bounded operational authority? We address these questions through a purposive evidence map and propose Clinical Action Assurance (CAA), a reference framework with a synthetic implementation. CAA is a synthesis and operationalization of existing principles, not a certification scheme or a proof that an agent is safe.
+
+\begin{table}[t]
+\caption{Positioning relative to existing review literature}
+\label{tab:position}\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}p{.23\columnwidth}Y@{}}\toprule
+Source & Complementary emphasis \\ \midrule
+Collaco et al. \cite{collaco2026review} & Scoping of applications and agentic conceptual features.\\
+Xu et al. \cite{xu2026survey} & Broad survey of AI agents in healthcare.\\
+Vatsal et al. \cite{vatsal2026taxonomy} & Taxonomic treatment of healthcare agent capabilities.\\
+Hu et al. \cite{hu2026survey} & Biomedical engineering survey of agents and translation.\\
+Present review & Action/effect/authority distinctions; traceable evidence limits; approval and destination-state obligations.\\ \bottomrule
+\end{tabularx}
+\end{table}

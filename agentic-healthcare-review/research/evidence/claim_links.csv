@@ -1,0 +1,19 @@
+claim_id,study_id,key,claim,locator,limitation,independent_human_check
+S01-anchor,S01,medagents2024,boundary comparator,Primary ACL paper,Multi-agent medical reasoning; static answers do not establish executed clinical effects.,pending
+S02-anchor,S02,agentclinic2026,interactive diagnostic benchmark,Primary journal,Simulated patient conversations and information acquisition; no prospective live autonomous care established here.,pending
+S03-anchor,S03,medrax2025,2500 queries,Primary conference,"Tool use on medical images evaluates bounded benchmark outputs, not deployed radiology decisions.",pending
+S04-anchor,S04,medagentbench2025,300 tasks; 100 profiles,Primary journal / preprint,Original task success concerns scripted sandbox effects.,pending
+S05-anchor,S05,medagentbenchv2,91% original without memory; 98% with feedback memory; 266/300 (88.67%) new tasks,"Sections 2.3, 3.1–3.3",Different task sets and memory conditions must not be merged into one rate.,pending
+S06-anchor,S06,physicianbench2026,100 tasks; 670 checkpoints; average 27 calls; best 46%,Abstract; full paper,Execution-grounded tasks using real records remain benchmark evaluations.,pending
+S07-anchor,S07,healthagentbench2026,54 tasks; 7 categories; best approximately 42%,Abstract; full paper,Composite research and healthcare tasks; aggregate is not clinical efficacy.,pending
+S08-anchor,S08,patientagentbench2026,1200 scenarios; 10 models; triage 32–88%,Abstract; results,Dialogue and triage outputs do not verify downstream patient care.,pending
+S09-anchor,S09,medcta2026,107 tasks; 5 tools,Abstract; benchmark design,Process evaluation complements final outputs; neither alone establishes clinical utility.,pending
+S10-anchor,S10,mira2026,over 500 cases; 11 tools; over 85000 action options,Main results; methods,Retrospective evaluation and physician comparison do not establish prospective autonomous practice.,pending
+S11-anchor,S11,onprem2026,threshold 0.90: coverage 49.4%; diagnostic accuracy 98.9%,Abstract; selective-autonomy results,Retained diagnostic accuracy is not the unsafe committed-action rate.,pending
+S12-anchor,S12,amie2025,randomized actor-based evaluation,Methods: study design,Boundary comparator: actor encounters do not establish autonomous ordering or patient outcomes.,pending
+S13-anchor,S13,amiemanagement2026,longitudinal actor-based evaluation,Main results; methods,Recommendations and simulated follow-up are distinct from live execution.,pending
+S14-anchor,S14,maid2025,304 NEJM cases,Benchmark design,Simulated testing costs are not observed healthcare expenditure or clinical outcomes.,pending
+S15-anchor,S15,gptplan2025,12 lung IMRT; 5 cervical VMAT,Abstract only,Abstract-only extraction; no claim of treatment delivery or patient benefit.,pending
+S16-anchor,S16,medagentboard2025,multi-agent and conventional comparators,Primary conference / preprint,"Multiple agents do not imply benefit independent of task, budget, or comparator.",pending
+S17-anchor,S17,medassist2026,vOpenManus configuration,Primary journal,Framework evaluation does not establish safety of an institutional workflow.,pending
+S18-anchor,S18,healthadmin2026,135 tasks; 1698 points; best task 36.3%; highest subtask 82.8%,Abstract; benchmark/results,Task best is Claude Opus 4.6 CUA; subtask best is GPT-5.4 CUA: different configurations.,pending

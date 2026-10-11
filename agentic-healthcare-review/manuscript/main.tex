@@ -1,0 +1,36 @@
+\documentclass[journal,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,cite,amsmath,amssymb,graphicx,booktabs,tabularx,array,xcolor}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{balance}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\emergencystretch}{2em}
+\Urlmuskip=0mu plus 1mu
+\title{From Clinical Reasoning to Authorized Action: A Critical Review of Agentic AI in Healthcare and a Clinical Action Assurance Framework}
+\author{Anonymous research draft for author and clinical expert verification}
+\begin{document}
+\maketitle
+\raggedbottom
+\bstctlcite{IEEEcontrol}
+\begin{abstract}
+Healthcare AI agents increasingly retrieve evidence, operate clinical tools, and generate structured actions. Their evaluation nevertheless mixes medical knowledge, diagnostic judgment, workflow completion, and safety, obscuring what autonomy the evidence supports. This critical review develops an action-centered synthesis of 18 purposively selected empirical reports, informed by reproducible PubMed and arXiv discovery searches and primary-source checks through a literature cutoff of 10 October 2026. The sample spans collaborative medical reasoning, diagnostic dialogue, imaging tools, electronic health record sandboxes, radiotherapy planning, and administrative workflows. We distinguish a proposed action, its verified effect, and the authority to execute it. Recent benchmarks expose long-horizon, tool-protocol, and execution failures that static question answering cannot detect; retrospective patient records and actor-based evaluations remain distinct from prospective patient-care evidence. We propose Clinical Action Assurance, a reference framework combining patient binding, evidence provenance, contextual authorization, approval-bound action contracts, state verification, and monitored escalation. A synthetic reference implementation illustrates software invariants without claiming clinical validation. The resulting evaluation agenda links action-level correctness to workflow safety, human workload, equity, and patient outcomes. Reliable clinical agency requires evidence about permissible effects and their consequences.
+\end{abstract}
+\begin{IEEEkeywords}
+Agentic artificial intelligence, clinical safety, healthcare agents, large language models, clinical evaluation.
+\end{IEEEkeywords}
+\input{sections/01_introduction}
+\input{sections/02_methods}
+\input{sections/03_taxonomy}
+\input{sections/04_evidence}
+\input{sections/05_failures}
+\input{sections/06_framework}
+\input{sections/07_evaluation}
+\input{sections/08_discussion}
+\input{sections/09_conclusion}
+\section*{Data, Code, and AI Assistance}
+Sources, evidence registers, original figures, build scripts, and a synthetic implementation are available in the accompanying repository at \url{https://github.com/ignitesoftlabs-pixel/research/tree/main/agentic-healthcare-review}. No patient-level data or publisher reading copies are redistributed. AI assisted discovery, extraction, synthesis, writing, and code generation. Independent human and clinical verification has not yet been documented; this version is a research draft. The implementation is illustrative software, with no clinical deployment or new patient experiment. Author identity, contributions, conflicts, funding, and required disclosures must be completed by the submitting authors.
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
