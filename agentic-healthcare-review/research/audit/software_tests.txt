@@ -1,0 +1,23 @@
+test_adapter_binding (__main__.Invariants.test_adapter_binding) ... ok
+test_changed_evidence (__main__.Invariants.test_changed_evidence) ... ok
+test_changed_policy (__main__.Invariants.test_changed_policy) ... ok
+test_changed_resource (__main__.Invariants.test_changed_resource) ... ok
+test_expired_contract (__main__.Invariants.test_expired_contract) ... ok
+test_future_evidence (__main__.Invariants.test_future_evidence) ... ok
+test_idempotent_retry (__main__.Invariants.test_idempotent_retry) ... ok
+test_key_conflict (__main__.Invariants.test_key_conflict) ... ok
+test_missing_approval (__main__.Invariants.test_missing_approval) ... ok
+test_mutated_approved_arguments (__main__.Invariants.test_mutated_approved_arguments) ... ok
+test_prohibited_operation (__main__.Invariants.test_prohibited_operation) ... ok
+test_receipt_mismatch_escalates (__main__.Invariants.test_receipt_mismatch_escalates) ... ok
+test_revoked_scope_on_replay (__main__.Invariants.test_revoked_scope_on_replay) ... ok
+test_stale_evidence (__main__.Invariants.test_stale_evidence) ... ok
+test_valid_receipt (__main__.Invariants.test_valid_receipt) ... ok
+test_wrong_encounter (__main__.Invariants.test_wrong_encounter) ... ok
+test_wrong_patient (__main__.Invariants.test_wrong_patient) ... ok
+test_wrong_reviewer (__main__.Invariants.test_wrong_reviewer) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.001s
+
+OK

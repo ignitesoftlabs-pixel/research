@@ -1,0 +1,36 @@
+moor2023 Foundation models for generalist medical artificial intelligence
+hager2024 Evaluation and mitigation of the limitations of large language models 
+wooldridge1995 Intelligent agents: theory and practice
+singhal2023 Large language models encode clinical knowledge
+goh2024 Large Language Model Influence on Diagnostic Reasoning
+medagentbench2025 MedAgentBench: A Virtual EHR Environment to Benchmark Medical LLM Agen
+agentclinic2026 AgentClinic: a multimodal benchmark for tool-using clinical AI agents
+mira2026 Towards autonomous medical artificial intelligence agents
+medagentbenchv2 MedAgentBench v2: Improving Medical LLM Agent Design
+medagents2024 MedAgents: Large Language Models as Collaborators for Zero-shot Medica
+amiemanagement2026 Towards conversational artificial intelligence for disease management
+amie2025 Towards conversational diagnostic artificial intelligence
+gptplan2025 A feasibility study of automating radiotherapy planning with large lan
+onprem2026 On-premise medical AI agents for reliable clinical decision-making
+leeinjection2025 Vulnerability of Large Language Models to Prompt Injection When Provid
+medassist2026 Benchmarking large language model-based agent systems for clinical dec
+xu2026survey A comprehensive survey of AI agents in healthcare
+qfire2026 Beyond Injection Detection: A Positive-Security Prompt Firewall that C
+hu2026survey The Next Paradigm in Medical AI: A Survey of Agentic AI in Biomedicine
+collaco2026review The role of agentic artificial intelligence in healthcare: a scoping r
+medicalagentsbench2026 MedicalAgentsBench for complex medical reasoning: Comparing internaliz
+vatsal2026taxonomy Agentic AI in Healthcare and Medicine: A Seven-Dimensional Taxonomy fo
+sanra2019 SANRA—a scale for the quality assessment of narrative review articles
+consortai2020 Reporting guidelines for clinical trial reports for interventions invo
+prismascr2018 PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Expla
+prisma2020 The PRISMA 2020 statement: an updated guideline for reporting systemat
+decideai2022 Reporting guideline for the early-stage clinical evaluation of decisio
+consort2025 CONSORT 2025 statement: updated guideline for reporting randomised tri
+stardai2025 The STARD-AI reporting guideline for diagnostic accuracy studies using
+mimiciv2023 MIMIC-IV, a freely accessible electronic health record dataset
+tripodllm2025 The TRIPOD-LLM reporting guideline for studies using large language mo
+spiritai2020 Guidelines for clinical trial protocols for interventions involving ar
+semanticentropy2024 Detecting hallucinations in large language models using semantic entro
+nist2023 Artificial Intelligence Risk Management Framework (AI RMF 1.0)
+nist2024 Artificial Intelligence Risk Management Framework: Generative Artifici
+Resolved 54 errors []

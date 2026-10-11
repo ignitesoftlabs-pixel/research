@@ -1,0 +1,143 @@
+\documentclass[journal,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,cite,booktabs,tabularx,array,listings}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\lstset{basicstyle=\ttfamily\scriptsize,breaklines=true,columns=fullflexible,keepspaces=true,breakatwhitespace=false}
+\setlength{\emergencystretch}{2em}
+\title{Supplementary Research Methods and Evidence Register\\Agentic AI in Healthcare}
+\author{Companion to the AI-assisted critical review draft}
+\begin{document}\maketitle\raggedbottom\bstctlcite{IEEEcontrol}
+\section{Purpose and Provenance}
+This supplement records discovery queries, extraction boundaries, the selected evidence register, and a synthetic software demonstration. It is a methodological companion to a purposive critical integrative review, not a PRISMA flow or evidence of independent dual screening. Literature cutoff: 10 October 2026. The current exports were rebuilt and retrieved after the original temporary workspace was lost; timestamps in the repository are authoritative for this refreshed snapshot. No historical inventory was reconstructed as raw data.
+\section{Discovery Inventory}
+Database queries retrieve metadata for discovery. All unselected records remain unassessed. PubMed uses publication dates; arXiv uses submitted dates. Identifier duplicate removal does not adjudicate article/preprint versions or establish scientific deduplication. No reported count is a prevalence denominator or a completed screening count.
+\begin{table}[h]\caption{Refreshed discovery snapshot}\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}Yr@{}}\toprule
+Quantity & Count\\\midrule
+P1\_agentic retrieved occurrences & 1001\\
+P2\_collaboration retrieved occurrences & 152\\
+A1\_arxiv retrieved occurrences & 712\\
+All query occurrences & 1865\\
+Unique database identifiers & 1823\\
+Duplicate identifier occurrences & 42\\
+Purposively selected reports & 18\\
+\bottomrule\end{tabularx}\end{table}
+\subsection{Exact reproducible queries}
+\subsubsection{P1\_agentic}
+\begin{lstlisting}
+((agentic[Title/Abstract] OR "LLM agent"[Title/Abstract] OR "LLM agents"[Title/Abstract] OR "large language model agent"[Title/Abstract] OR "large language model agents"[Title/Abstract] OR "tool-using"[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract] OR patient[Title/Abstract])) AND ("2022/01/01"[Date - Publication] : "2026/10/10"[Date - Publication])
+\end{lstlisting}
+\subsubsection{P2\_collaboration}
+\begin{lstlisting}
+(("multi-agent"[Title/Abstract] OR multiagent[Title/Abstract]) AND ("large language model"[Title/Abstract] OR "large language models"[Title/Abstract] OR LLM[Title/Abstract] OR LLMs[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract])) AND ("2022/01/01"[Date - Publication] : "2026/10/10"[Date - Publication])
+\end{lstlisting}
+\subsubsection{A1\_arxiv}
+\begin{lstlisting}
+((ti:agentic OR abs:agentic OR ti:"medical agent" OR ti:"clinical agent" OR ti:"LLM agents" OR ti:"multi-agent") AND (ti:healthcare OR ti:medical OR ti:clinical OR abs:"electronic health record" OR abs:"clinical tool")) AND submittedDate:[202201010000 TO 202610102359]
+\end{lstlisting}
+\section{Selection, Extraction, and Access}
+Selection spans reasoning, dialogue, imaging tools, EHR task execution, management, planning, and administrative workflows. Eighteen reports provide analytical anchors: eight journal, four conference, and six preprint reports under the cited versions; two are boundary comparators. This is a purposive map, not exhaustive selection from the discovery inventory. Older conceptual, reporting, uncertainty, interoperability, and governance sources provide context.
+
+Fields include source key and persistent identifier, publication status, environment, action/effect, task/sample unit, endpoint, quantitative anchor, source locator, and interpretation limit. Primary PDF/landing retrieval status and hashes are logged separately. Reading copies are kept outside the public project. GPTPlan is abstract-only. Bibliographic resolution does not verify a scientific claim. AI-assisted extraction and targeted source checks do not substitute for independent clinical verification; every register row marks that author check as pending.
+\section{Selected Empirical Register}
+\subsection{S01: MedAgents}
+\textbf{Status/environment:} conference; offline QA. \textbf{Action/endpoint:} answer; accuracy.
+
+\textbf{Reported anchor:} boundary comparator \cite{medagents2024}. \textbf{Locator:} Primary ACL paper. \textbf{Limit:} Multi-agent medical reasoning; static answers do not establish executed clinical effects.
+
+\subsection{S02: AgentClinic}
+\textbf{Status/environment:} journal; simulated patients. \textbf{Action/endpoint:} acquire; diagnosis.
+
+\textbf{Reported anchor:} interactive diagnostic benchmark \cite{agentclinic2026}. \textbf{Locator:} Primary journal. \textbf{Limit:} Simulated patient conversations and information acquisition; no prospective live autonomous care established here.
+
+\subsection{S03: MedRAX}
+\textbf{Status/environment:} conference; image-tool sandbox. \textbf{Action/endpoint:} tool; task answer.
+
+\textbf{Reported anchor:} 2500 queries \cite{medrax2025}. \textbf{Locator:} Primary conference. \textbf{Limit:} Tool use on medical images evaluates bounded benchmark outputs, not deployed radiology decisions.
+
+\subsection{S04: MedAgentBench}
+\textbf{Status/environment:} journal; EHR sandbox. \textbf{Action/endpoint:} sandbox write; task success.
+
+\textbf{Reported anchor:} 300 tasks; 100 profiles \cite{medagentbench2025}. \textbf{Locator:} Primary journal / preprint. \textbf{Limit:} Original task success concerns scripted sandbox effects.
+
+\subsection{S05: MedAgentBench v2}
+\textbf{Status/environment:} conference; EHR sandbox. \textbf{Action/endpoint:} sandbox write; task success.
+
+\textbf{Reported anchor:} 91\% original without memory; 98\% with feedback memory; 266/300 (88.67\%) new tasks \cite{medagentbenchv2}. \textbf{Locator:} Sections 2.3, 3.1--3.3. \textbf{Limit:} Different task sets and memory conditions must not be merged into one rate.
+
+\subsection{S06: PhysicianBench}
+\textbf{Status/environment:} preprint; real-record EHR sandbox. \textbf{Action/endpoint:} sandbox write; pass@1.
+
+\textbf{Reported anchor:} 100 tasks; 670 checkpoints; average 27 calls; best 46\% \cite{physicianbench2026}. \textbf{Locator:} Abstract; full paper. \textbf{Limit:} Execution-grounded tasks using real records remain benchmark evaluations.
+
+\subsection{S07: HealthAgentBench}
+\textbf{Status/environment:} preprint; container environments. \textbf{Action/endpoint:} artifact; task success.
+
+\textbf{Reported anchor:} 54 tasks; 7 categories; best approximately 42\% \cite{healthagentbench2026}. \textbf{Locator:} Abstract; full paper. \textbf{Limit:} Composite research and healthcare tasks; aggregate is not clinical efficacy.
+
+\subsection{S08: PatientAgentBench}
+\textbf{Status/environment:} preprint; simulated patients. \textbf{Action/endpoint:} propose; triage-quality pass.
+
+\textbf{Reported anchor:} 1200 scenarios; 10 models; triage-quality pass rates 32--88\% \cite{patientagentbench2026}. \textbf{Locator:} Abstract; results. \textbf{Limit:} Dialogue and triage outputs do not verify downstream patient care.
+
+\subsection{S09: MedCTA}
+\textbf{Status/environment:} preprint; tool benchmark. \textbf{Action/endpoint:} tool; trajectory/output.
+
+\textbf{Reported anchor:} 107 tasks; 5 tools \cite{medcta2026}. \textbf{Locator:} Abstract; benchmark design. \textbf{Limit:} Process evaluation complements final outputs; neither alone establishes clinical utility.
+
+\subsection{S10: MIRA}
+\textbf{Status/environment:} journal; retrospective-record simulation. \textbf{Action/endpoint:} propose; diagnosis/management.
+
+\textbf{Reported anchor:} over 500 cases; 11 tools; over 85000 action options \cite{mira2026}. \textbf{Locator:} Main results; methods. \textbf{Limit:} Retrospective evaluation and physician comparison do not establish prospective autonomous practice.
+
+\subsection{S11: On-premise agent}
+\textbf{Status/environment:} journal; MIMIC-derived simulation. \textbf{Action/endpoint:} propose; selective diagnosis.
+
+\textbf{Reported anchor:} threshold 0.90: coverage 49.4\%; diagnostic accuracy 98.9\% \cite{onprem2026}. \textbf{Locator:} Abstract; selective-autonomy results. \textbf{Limit:} Retained diagnostic accuracy is not the unsafe committed-action rate.
+
+\subsection{S12: AMIE diagnosis}
+\textbf{Status/environment:} journal; patient actors. \textbf{Action/endpoint:} dialogue; diagnosis/dialogue.
+
+\textbf{Reported anchor:} randomized actor-based evaluation \cite{amie2025}. \textbf{Locator:} Methods: study design. \textbf{Limit:} Boundary comparator: actor encounters do not establish autonomous ordering or patient outcomes.
+
+\subsection{S13: AMIE management}
+\textbf{Status/environment:} journal; multivisit patient actors. \textbf{Action/endpoint:} propose; management quality.
+
+\textbf{Reported anchor:} longitudinal actor-based evaluation \cite{amiemanagement2026}. \textbf{Locator:} Main results; methods. \textbf{Limit:} Recommendations and simulated follow-up are distinct from live execution.
+
+\subsection{S14: MAI-DxO}
+\textbf{Status/environment:} preprint; published diagnostic cases. \textbf{Action/endpoint:} acquire; diagnosis/modeled cost.
+
+\textbf{Reported anchor:} 304 NEJM cases \cite{maid2025}. \textbf{Locator:} Benchmark design. \textbf{Limit:} Simulated testing costs are not observed healthcare expenditure or clinical outcomes.
+
+\subsection{S15: GPTPlan}
+\textbf{Status/environment:} journal; retrospective plan optimization. \textbf{Action/endpoint:} artifact; dose-plan quality.
+
+\textbf{Reported anchor:} 12 lung IMRT; 5 cervical VMAT \cite{gptplan2025}. \textbf{Locator:} Abstract only. \textbf{Limit:} Abstract-only extraction; no claim of treatment delivery or patient benefit.
+
+\subsection{S16: MedAgentBoard}
+\textbf{Status/environment:} conference; offline mixed tasks. \textbf{Action/endpoint:} answer; task-specific metrics.
+
+\textbf{Reported anchor:} multi-agent and conventional comparators \cite{medagentboard2025}. \textbf{Locator:} Primary conference / preprint. \textbf{Limit:} Multiple agents do not imply benefit independent of task, budget, or comparator.
+
+\subsection{S17: MedAssist}
+\textbf{Status/environment:} journal; offline mixed benchmarks. \textbf{Action/endpoint:} tool; benchmark scores.
+
+\textbf{Reported anchor:} vOpenManus configuration \cite{medassist2026}. \textbf{Locator:} Primary journal. \textbf{Limit:} Framework evaluation does not establish safety of an institutional workflow.
+
+\subsection{S18: HealthAdminBench}
+\textbf{Status/environment:} preprint; four GUI replicas. \textbf{Action/endpoint:} sandbox write; task/subtask success.
+
+\textbf{Reported anchor:} 135 tasks; 1698 points; best task 36.3\%; highest subtask 82.8\% \cite{healthadmin2026}. \textbf{Locator:} Abstract; benchmark/results. \textbf{Limit:} Task best is Claude Opus 4.6 CUA; subtask best is GPT-5.4 CUA: different configurations.
+
+\section{Synthetic Reference Implementation}
+The implementation demonstrates an in-memory gate for one operation: creation of a follow-up review task. It contains no LLM, patient record, production clinical rule set, or authenticated reviewer service. Subject and encounter strings are synthetic. The trusted policy, evidence timestamps, resource version, payload digest, approval expiry, and idempotency registry are explicit and testable. A lock illustrates atomic check/write behavior within one process; it does not solve distributed clinical transactions.
+
+Negative tests cover wrong patient, wrong encounter, adapter mismatch, prohibited operation, changed resource version, changed evidence version, missing approval, mutated approved arguments, wrong reviewer, expiry, future evidence, stale evidence, duplicate identical retry, duplicate-key conflict, mismatched receipt, revoked scope, and changed policy. A valid execution test verifies the destination receipt. Tests run against software invariants only. They cannot establish clinical appropriateness, identity security, prompt-injection robustness, clinician review quality, interoperability, or patient benefit. A receipt mismatch after a committed write triggers escalation; the demonstration does not erase the effect or claim universal rollback.
+
+\section{Before Author Submission}
+Submitting authors should independently verify numerical anchors and publication versions, complete names/affiliations/contributions/conflicts/funding, obtain clinical and methodological review, and assess overlap with recent reviews. Confirm the target journal's current scope, initial submission format, AI disclosure policy, reference and figure rules, and current JCR category/quartile. Replace anonymous draft declarations only with true statements. Clinical systems require validation beyond the included illustrative tests. The accompanying cover letter is unsent and needs author completion. No journal acceptance is promised.
+\bibliographystyle{IEEEtran}\bibliography{references}
+\end{document}

@@ -1,0 +1,182 @@
+[
+  {
+    "study_id": "S01",
+    "url": "https://aclanthology.org/2024.findings-acl.33.pdf",
+    "retrieved_at": "2026-10-11T16:53:15.184986+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "f2ee1c1237436f1ce7031071b48494e4a5eebda40fe68f6897e298d4d9ce405f",
+    "bytes": 2678403,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S02",
+    "url": "https://www.nature.com/articles/s41746-026-02674-7.pdf",
+    "retrieved_at": "2026-10-11T16:53:15.185742+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "ec7067473b7e4e3f5d0adfd79c646ea86502a7339ecfa20af6f7b92e34c250e0",
+    "bytes": 2928099,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S03",
+    "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/fallahpour25a/fallahpour25a.pdf",
+    "retrieved_at": "2026-10-11T17:03:55.019553+00:00",
+    "downloaded": true,
+    "access_level": "full text downloaded",
+    "format": "pdf",
+    "bytes": 4742612,
+    "sha256": "bdd8704dc0b0db71be8d54aaccd8d30a22373a2e539fa5e4c23b9a865218defa"
+  },
+  {
+    "study_id": "S04",
+    "url": "https://arxiv.org/pdf/2501.14654",
+    "retrieved_at": "2026-10-11T16:53:15.186593+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "b2f47c4271453deeebf2c29523cdb614b8c01b032d8c2ee3a55e322179956415",
+    "bytes": 670362,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S05",
+    "url": "https://psb.stanford.edu/psb-online/proceedings/psb26/chen_eric.pdf",
+    "retrieved_at": "2026-10-11T16:53:20.269303+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "f5719f2034712c555d858179cc431bf849be77ac3e4550262f3fe87053011f79",
+    "bytes": 1259432,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S06",
+    "url": "https://arxiv.org/pdf/2605.02240",
+    "retrieved_at": "2026-10-11T16:53:21.744587+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "e276bda37f2b63a0653ce783b908806451c668ee0642226992e2c6b9b373f7c3",
+    "bytes": 1977411,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S07",
+    "url": "https://arxiv.org/pdf/2606.31179",
+    "retrieved_at": "2026-10-11T16:53:26.767045+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "d4d77b0b3578d2ec7db612dbe8efdf507f89b3355308999871eb48e1ef124402",
+    "bytes": 3562660,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S08",
+    "url": "https://arxiv.org/pdf/2607.25485",
+    "retrieved_at": "2026-10-11T16:53:38.495151+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "2368a61d5de17ddaae6f34b218651606c6b052ea0788abf36d64a95c490a184f",
+    "bytes": 6253831,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S09",
+    "url": "https://arxiv.org/pdf/2606.11702",
+    "retrieved_at": "2026-10-11T16:54:12.020777+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "aa88bb02190879840fa034cc20fe5817311e367b0148ea6a191e7c7eb0169bf7",
+    "bytes": 4723276,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S10",
+    "url": "https://www.nature.com/articles/s41586-026-10675-5.pdf",
+    "retrieved_at": "2026-10-11T16:54:12.160224+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "c7e780940caa2431e1eb3f6be9e93d34da717ddf8860996306553d1adeb1d8e8",
+    "bytes": 14502663,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S11",
+    "url": "https://www.nature.com/articles/s41591-026-04609-x.pdf",
+    "retrieved_at": "2026-10-11T16:54:12.467286+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "0319ad52e560bb4a8d15de816e30f665819457a74ccfc6e04ab2974bdba3d2d9",
+    "bytes": 7036645,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S12",
+    "url": "https://www.nature.com/articles/s41586-025-08866-7.pdf",
+    "retrieved_at": "2026-10-11T16:54:12.489813+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "564ae5442563b79b44cf63b57ef0732cb5f4f34c061ef994bb20fc4b945d5ba5",
+    "bytes": 9212565,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S13",
+    "url": "https://www.nature.com/articles/s41586-026-10764-5.pdf",
+    "retrieved_at": "2026-10-11T16:54:17.397628+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "fb96e88edf731901908f2c31291b8c382421696f6d459e9b8fafe05307b4a186",
+    "bytes": 16566407,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S14",
+    "url": "https://arxiv.org/pdf/2506.22405",
+    "retrieved_at": "2026-10-11T16:54:42.005848+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "5e9360f5e3f46f81ecea6faa25cb3c227d7fa858510adad03d819564e723888a",
+    "bytes": 7185914,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S15",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40073507/",
+    "retrieved_at": "2026-10-11T16:54:42.279909+00:00",
+    "downloaded": true,
+    "format": "html",
+    "sha256": "8c581f91f9b87fae9923c04151d89fd1f3c11b0f73de7b6b07f02bbd899670c3",
+    "bytes": 5590,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S16",
+    "url": "https://arxiv.org/pdf/2505.12371",
+    "retrieved_at": "2026-10-11T16:54:42.374086+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "63569966304d31009f2b229abd5c68eb135a97b3e1be633a9d10be1c2037232f",
+    "bytes": 1232962,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S17",
+    "url": "https://www.nature.com/articles/s41746-026-02443-6.pdf",
+    "retrieved_at": "2026-10-11T16:54:43.104317+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "5fd8b7c0f9d80cfe9d08c185be8e9410f321aec0af8c316e80165337b7d9a0ac",
+    "bytes": 3494960,
+    "access_level": "full text downloaded"
+  },
+  {
+    "study_id": "S18",
+    "url": "https://arxiv.org/pdf/2604.09937",
+    "retrieved_at": "2026-10-11T16:54:48.099505+00:00",
+    "downloaded": true,
+    "format": "pdf",
+    "sha256": "c6a368240c731a4eae8803acdbeac9cb20f49e05c0288f5e5c41c08e80d0dcd8",
+    "bytes": 1583378,
+    "access_level": "full text downloaded"
+  }
+]

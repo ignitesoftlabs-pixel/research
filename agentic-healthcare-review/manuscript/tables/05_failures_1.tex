@@ -1,0 +1,10 @@
+\begin{table*}[t]\caption{Failure triggers, test obligations, and residual limits}\label{tab:failure}\centering\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{.16\textwidth}p{.30\textwidth}Y@{}}\toprule
+Failure trigger & Test obligation & Candidate control and its limit \\ \midrule
+Wrong patient/encounter & Swap trusted subject or active adapter binding. & Bind context and contract; identity systems can still be erroneous.\\
+Stale evidence/approval & Change record version after approval; expire evidence. & Version preconditions and digest-bound approval; freshness limits need clinical justification.\\
+Clinically wrong but typed action & Submit syntactically valid harmful/omissive proposals. & Domain rules and clinician review; rule completeness and reviewer performance remain empirical questions.\\
+Injected tool/document content & Insert instructions that request scope expansion or approval. & Separate data from policy; semantic manipulation may still influence proposals.\\
+Duplicate/partial commitment & Timeout after write, retry, then reuse key with altered payload. & Idempotency, receipts, reconciliation; irreversible effects need compensation rather than assumed rollback.\\
+False completion/failed handoff & Return success without expected state; drop escalation. & Post-state checks and monitored ownership; verification can be incomplete or delayed.\\ \bottomrule
+\end{tabularx}\end{table*}

@@ -1,0 +1,34 @@
+{
+  "issues": [],
+  "passed": true,
+  "abstract_words": 183,
+  "references": 54,
+  "selected_reports": 18,
+  "original_figures": 5,
+  "tables": 5,
+  "equations": 7,
+  "discovery": {
+    "query_occurrences": 1865,
+    "unique_database_identifiers": 1823,
+    "duplicate_identifier_occurrences": 42,
+    "not_article_level_deduplication": true,
+    "selected_reports": 18,
+    "retrieved_at": "2026-10-11T16:54:34.957687+00:00",
+    "errors": []
+  },
+  "outputs": [
+    {
+      "name": "Agentic_AI_Healthcare_Review.pdf",
+      "pages": 11,
+      "bytes": 492947,
+      "sha256": "3d195fc4dd5809050c3de110c80393f0a134fa532fcef38953e780d1a5e59dad"
+    },
+    {
+      "name": "Agentic_AI_Healthcare_Supplement.pdf",
+      "pages": 4,
+      "bytes": 286528,
+      "sha256": "795451a3134f64cdf6fa8e96e8fb603a0de5f780296af3e45e5f874196eea1f0"
+    }
+  ],
+  "limitations": "technical checks only; independent clinical and author verification pending"
+}

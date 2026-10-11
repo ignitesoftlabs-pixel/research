@@ -1,0 +1,30 @@
+name: Build review and check invariants
+on:
+  push:
+    paths: ['agentic-healthcare-review/**', '.github/workflows/review-build.yml']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: agentic-healthcare-review
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended lmodern poppler-utils
+          python3 -m venv .venv
+          .venv/bin/pip install -r requirements.txt
+      - name: Build and verify offline snapshot
+        run: |
+          .venv/bin/python scripts/make_figures.py
+          .venv/bin/python scripts/build_pdfs.py
+          .venv/bin/python scripts/run_tests.py
+          .venv/bin/python scripts/validate_package.py

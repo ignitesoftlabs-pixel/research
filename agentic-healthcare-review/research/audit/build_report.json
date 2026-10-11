@@ -1,0 +1,15 @@
+{
+  "built_at": "2026-10-11T17:07:47.998825+00:00",
+  "outputs": [
+    {
+      "file": "Agentic_AI_Healthcare_Review.pdf",
+      "sha256": "3d195fc4dd5809050c3de110c80393f0a134fa532fcef38953e780d1a5e59dad",
+      "bytes": 492947
+    },
+    {
+      "file": "Agentic_AI_Healthcare_Supplement.pdf",
+      "sha256": "795451a3134f64cdf6fa8e96e8fb603a0de5f780296af3e45e5f874196eea1f0",
+      "bytes": 286528
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "retrieval_logs": [
+    {
+      "query_id": "P1_agentic",
+      "query": "((agentic[Title/Abstract] OR \"LLM agent\"[Title/Abstract] OR \"LLM agents\"[Title/Abstract] OR \"large language model agent\"[Title/Abstract] OR \"large language model agents\"[Title/Abstract] OR \"tool-using\"[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract] OR patient[Title/Abstract])) AND (\"2022/01/01\"[Date - Publication] : \"2026/10/10\"[Date - Publication])",
+      "started_at": "2026-10-11T16:51:53.500429+00:00",
+      "reported_count": 1001,
+      "retrieved_count": 1001,
+      "complete": true,
+      "api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28agentic%5BTitle%2FAbstract%5D+OR+%22LLM+agent%22%5BTitle%2FAbstract%5D+OR+%22LLM+agents%22%5BTitle%2FAbstract%5D+OR+%22large+language+model+agent%22%5BTitle%2FAbstract%5D+OR+%22large+language+model+agents%22%5BTitle%2FAbstract%5D+OR+%22tool-using%22%5BTitle%2FAbstract%5D%29+AND+%28healthcare%5BTitle%2FAbstract%5D+OR+medical%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D+OR+medicine%5BTitle%2FAbstract%5D+OR+patient%5BTitle%2FAbstract%5D%29%29+AND+%28%222022%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F10%22%5BDate+-+Publication%5D%29&retmax=10000&retmode=json"
+    },
+    {
+      "query_id": "P2_collaboration",
+      "query": "((\"multi-agent\"[Title/Abstract] OR multiagent[Title/Abstract]) AND (\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract] OR LLM[Title/Abstract] OR LLMs[Title/Abstract]) AND (healthcare[Title/Abstract] OR medical[Title/Abstract] OR clinical[Title/Abstract] OR medicine[Title/Abstract])) AND (\"2022/01/01\"[Date - Publication] : \"2026/10/10\"[Date - Publication])",
+      "started_at": "2026-10-11T16:53:33.311499+00:00",
+      "reported_count": 152,
+      "retrieved_count": 152,
+      "complete": true,
+      "api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%22multi-agent%22%5BTitle%2FAbstract%5D+OR+multiagent%5BTitle%2FAbstract%5D%29+AND+%28%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22large+language+models%22%5BTitle%2FAbstract%5D+OR+LLM%5BTitle%2FAbstract%5D+OR+LLMs%5BTitle%2FAbstract%5D%29+AND+%28healthcare%5BTitle%2FAbstract%5D+OR+medical%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D+OR+medicine%5BTitle%2FAbstract%5D%29%29+AND+%28%222022%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F10%22%5BDate+-+Publication%5D%29&retmax=10000&retmode=json"
+    },
+    {
+      "query_id": "A1_arxiv",
+      "query": "((ti:agentic OR abs:agentic OR ti:\"medical agent\" OR ti:\"clinical agent\" OR ti:\"LLM agents\" OR ti:\"multi-agent\") AND (ti:healthcare OR ti:medical OR ti:clinical OR abs:\"electronic health record\" OR abs:\"clinical tool\")) AND submittedDate:[202201010000 TO 202610102359]",
+      "started_at": "2026-10-11T16:53:52.872503+00:00",
+      "reported_count": 712,
+      "retrieved_count": 712,
+      "complete": true,
+      "api_url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3Aagentic+OR+abs%3Aagentic+OR+ti%3A%22medical+agent%22+OR+ti%3A%22clinical+agent%22+OR+ti%3A%22LLM+agents%22+OR+ti%3A%22multi-agent%22%29+AND+%28ti%3Ahealthcare+OR+ti%3Amedical+OR+ti%3Aclinical+OR+abs%3A%22electronic+health+record%22+OR+abs%3A%22clinical+tool%22%29%29+AND+submittedDate%3A%5B202201010000+TO+202610102359%5D&start=600&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    }
+  ],
+  "errors": [],
+  "cutoff": "2026-10-10",
+  "design": "unassessed discovery inventory, not systematic screening"
+}

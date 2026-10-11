@@ -6,7 +6,7 @@ S04-anchor,S04,medagentbench2025,300 tasks; 100 profiles,Primary journal / prepr
 S05-anchor,S05,medagentbenchv2,91% original without memory; 98% with feedback memory; 266/300 (88.67%) new tasks,"Sections 2.3, 3.1–3.3",Different task sets and memory conditions must not be merged into one rate.,pending
 S06-anchor,S06,physicianbench2026,100 tasks; 670 checkpoints; average 27 calls; best 46%,Abstract; full paper,Execution-grounded tasks using real records remain benchmark evaluations.,pending
 S07-anchor,S07,healthagentbench2026,54 tasks; 7 categories; best approximately 42%,Abstract; full paper,Composite research and healthcare tasks; aggregate is not clinical efficacy.,pending
-S08-anchor,S08,patientagentbench2026,1200 scenarios; 10 models; triage 32–88%,Abstract; results,Dialogue and triage outputs do not verify downstream patient care.,pending
+S08-anchor,S08,patientagentbench2026,1200 scenarios; 10 models; triage-quality pass rates 32–88%,Abstract; results,Dialogue and triage outputs do not verify downstream patient care.,pending
 S09-anchor,S09,medcta2026,107 tasks; 5 tools,Abstract; benchmark design,Process evaluation complements final outputs; neither alone establishes clinical utility.,pending
 S10-anchor,S10,mira2026,over 500 cases; 11 tools; over 85000 action options,Main results; methods,Retrospective evaluation and physician comparison do not establish prospective autonomous practice.,pending
 S11-anchor,S11,onprem2026,threshold 0.90: coverage 49.4%; diagnostic accuracy 98.9%,Abstract; selective-autonomy results,Retained diagnostic accuracy is not the unsafe committed-action rate.,pending

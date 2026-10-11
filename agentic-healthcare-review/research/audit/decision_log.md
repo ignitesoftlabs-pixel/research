@@ -1,0 +1,14 @@
+# Decisions and corrections
+- Selected critical integrative design; no systematic/scoping/PRISMA claim without appropriate workflow.
+- Distinguished informational answers, evidence acquisition, proposals, sandbox and live effects, longitudinal authority.
+- Preserved incomparable numerical endpoints rather than pooling or ranking systems.
+- Positioned CAA as proposed synthesis of established governance, permission, provenance, state and recovery controls.
+- Rebuilt after interrupted uncommitted upload; refreshed discovery date and counts logged honestly.
+- Corrected NIST 2024 corporate author; preserved full primary title and PSB 2026 chapter publication year.
+- Corrected survey attribution from historical alias Hu to primary metadata author Abdollahi.
+- Corrected PatientAgentBench triage “accuracy” wording to triage-quality pass rate.
+- Kept HealthAdminBench task/subtask best configurations separate.
+- Retrieved MedRAX PDF through official PMLR GitHub asset after a directory PDF URL returned 404.
+- Made diagram approval feed admission gate; planner cannot approve its own contract.
+- Removed premature bibliography balancing that generated output overfull warnings.
+- All clinical interpretation and submitting-author verification remain pending.

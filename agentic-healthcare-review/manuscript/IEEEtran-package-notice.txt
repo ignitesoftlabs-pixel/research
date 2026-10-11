@@ -1,0 +1,1 @@
+IEEEtran class and bibliography style obtained from upstream CTAN distribution https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip. Files retain their own copyright and licensing terms. Original headers are preserved.

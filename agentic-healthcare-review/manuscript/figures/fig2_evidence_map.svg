@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="502.956pt" height="317.88pt" viewBox="0 0 502.956 317.88" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-12T01:03:35.218807</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 317.88 
+L 502.956 317.88 
+L 502.956 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 4.29678 33.85656 
+L 498.65922 33.85656 
+L 498.65922 19.39968 
+L 4.29678 19.39968 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 4.29678 64.656 
+L 498.65922 64.656 
+L 498.65922 50.19912 
+L 4.29678 50.19912 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 4.29678 95.45544 
+L 498.65922 95.45544 
+L 498.65922 80.99856 
+L 4.29678 80.99856 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 4.29678 126.25488 
+L 498.65922 126.25488 
+L 498.65922 111.798 
+L 4.29678 111.798 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 4.29678 157.05432 
+L 498.65922 157.05432 
+L 498.65922 142.59744 
+L 4.29678 142.59744 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 4.29678 187.85376 
+L 498.65922 187.85376 
+L 498.65922 173.39688 
+L 4.29678 173.39688 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 4.29678 218.6532 
+L 498.65922 218.6532 
+L 498.65922 204.19632 
+L 4.29678 204.19632 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 4.29678 249.45264 
+L 498.65922 249.45264 
+L 498.65922 234.99576 
+L 4.29678 234.99576 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 4.29678 280.25208 
+L 498.65922 280.25208 
+L 498.65922 265.7952 
+L 4.29678 265.7952 
+z
+" clip-path="url(#p8c71145edd)" style="fill: #eef4f6"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="11.2284" transform="rotate(-0 9.29034 11.2284)">Selected report</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="11.2284" transform="rotate(-0 139.1229 11.2284)">Status</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="11.2284" transform="rotate(-0 181.56816 11.2284)">Environment</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="11.2284" transform="rotate(-0 316.39428 11.2284)">Action</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="11.2284" transform="rotate(-0 403.78158 11.2284)">Endpoint</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="30.472956" transform="rotate(-0 9.29034 30.472956)">S01  MedAgents</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="30.472956" transform="rotate(-0 139.1229 30.472956)">C</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="30.472956" transform="rotate(-0 181.56816 30.472956)">offline QA</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="30.472956" transform="rotate(-0 316.39428 30.472956)">answer</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="30.472956" transform="rotate(-0 403.78158 30.472956)">accuracy</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="45.872676" transform="rotate(-0 9.29034 45.872676)">S02  AgentClinic</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="45.872676" transform="rotate(-0 139.1229 45.872676)">J</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="45.872676" transform="rotate(-0 181.56816 45.872676)">simulated patients</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="45.872676" transform="rotate(-0 316.39428 45.872676)">acquire</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="45.872676" transform="rotate(-0 403.78158 45.872676)">diagnosis</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="61.272396" transform="rotate(-0 9.29034 61.272396)">S03  MedRAX</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="61.272396" transform="rotate(-0 139.1229 61.272396)">C</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="61.272396" transform="rotate(-0 181.56816 61.272396)">image-tool sandbox</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="61.272396" transform="rotate(-0 316.39428 61.272396)">tool</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="61.272396" transform="rotate(-0 403.78158 61.272396)">task answer</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="76.672116" transform="rotate(-0 9.29034 76.672116)">S04  MedAgentBench</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="76.672116" transform="rotate(-0 139.1229 76.672116)">J</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="76.672116" transform="rotate(-0 181.56816 76.672116)">EHR sandbox</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="76.672116" transform="rotate(-0 316.39428 76.672116)">sandbox write</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="76.672116" transform="rotate(-0 403.78158 76.672116)">task success</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="92.071836" transform="rotate(-0 9.29034 92.071836)">S05  MedAgentBench v2</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="92.071836" transform="rotate(-0 139.1229 92.071836)">C</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="92.071836" transform="rotate(-0 181.56816 92.071836)">EHR sandbox</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="92.071836" transform="rotate(-0 316.39428 92.071836)">sandbox write</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="92.071836" transform="rotate(-0 403.78158 92.071836)">task success</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="107.471556" transform="rotate(-0 9.29034 107.471556)">S06  PhysicianBench</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="107.471556" transform="rotate(-0 139.1229 107.471556)">P</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="107.471556" transform="rotate(-0 181.56816 107.471556)">real-record EHR sandbox</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="107.471556" transform="rotate(-0 316.39428 107.471556)">sandbox write</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="107.471556" transform="rotate(-0 403.78158 107.471556)">pass@1</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="122.871276" transform="rotate(-0 9.29034 122.871276)">S07  HealthAgentBench</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="122.871276" transform="rotate(-0 139.1229 122.871276)">P</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="122.871276" transform="rotate(-0 181.56816 122.871276)">container environments</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="122.871276" transform="rotate(-0 316.39428 122.871276)">artifact</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="122.871276" transform="rotate(-0 403.78158 122.871276)">task success</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="138.270996" transform="rotate(-0 9.29034 138.270996)">S08  PatientAgentBench</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="138.270996" transform="rotate(-0 139.1229 138.270996)">P</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="138.270996" transform="rotate(-0 181.56816 138.270996)">simulated patients</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="138.270996" transform="rotate(-0 316.39428 138.270996)">propose</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="138.270996" transform="rotate(-0 403.78158 138.270996)">triage-quality pass</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="153.670716" transform="rotate(-0 9.29034 153.670716)">S09  MedCTA</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="153.670716" transform="rotate(-0 139.1229 153.670716)">P</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="153.670716" transform="rotate(-0 181.56816 153.670716)">tool benchmark</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="153.670716" transform="rotate(-0 316.39428 153.670716)">tool</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="153.670716" transform="rotate(-0 403.78158 153.670716)">trajectory/output</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="169.070436" transform="rotate(-0 9.29034 169.070436)">S10  MIRA</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="169.070436" transform="rotate(-0 139.1229 169.070436)">J</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="169.070436" transform="rotate(-0 181.56816 169.070436)">retrospective-record simulation</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="169.070436" transform="rotate(-0 316.39428 169.070436)">propose</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="169.070436" transform="rotate(-0 403.78158 169.070436)">diagnosis/management</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="184.470156" transform="rotate(-0 9.29034 184.470156)">S11  On-premise agent</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="184.470156" transform="rotate(-0 139.1229 184.470156)">J</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="184.470156" transform="rotate(-0 181.56816 184.470156)">MIMIC-derived simulation</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="184.470156" transform="rotate(-0 316.39428 184.470156)">propose</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="184.470156" transform="rotate(-0 403.78158 184.470156)">selective diagnosis</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="199.869876" transform="rotate(-0 9.29034 199.869876)">S12  AMIE diagnosis</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="199.869876" transform="rotate(-0 139.1229 199.869876)">J</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="199.869876" transform="rotate(-0 181.56816 199.869876)">patient actors</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="199.869876" transform="rotate(-0 316.39428 199.869876)">dialogue</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="199.869876" transform="rotate(-0 403.78158 199.869876)">diagnosis/dialogue</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="215.269596" transform="rotate(-0 9.29034 215.269596)">S13  AMIE management</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="215.269596" transform="rotate(-0 139.1229 215.269596)">J</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="215.269596" transform="rotate(-0 181.56816 215.269596)">multivisit patient actors</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="215.269596" transform="rotate(-0 316.39428 215.269596)">propose</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="215.269596" transform="rotate(-0 403.78158 215.269596)">management quality</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="230.669316" transform="rotate(-0 9.29034 230.669316)">S14  MAI-DxO</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="230.669316" transform="rotate(-0 139.1229 230.669316)">P</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="230.669316" transform="rotate(-0 181.56816 230.669316)">published diagnostic cases</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="230.669316" transform="rotate(-0 316.39428 230.669316)">acquire</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="230.669316" transform="rotate(-0 403.78158 230.669316)">diagnosis/modeled cost</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="246.069036" transform="rotate(-0 9.29034 246.069036)">S15  GPTPlan</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="246.069036" transform="rotate(-0 139.1229 246.069036)">J</text>
+   </g>
+   <g id="text_78">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="246.069036" transform="rotate(-0 181.56816 246.069036)">retrospective plan optimization</text>
+   </g>
+   <g id="text_79">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="246.069036" transform="rotate(-0 316.39428 246.069036)">artifact</text>
+   </g>
+   <g id="text_80">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="246.069036" transform="rotate(-0 403.78158 246.069036)">dose-plan quality</text>
+   </g>
+   <g id="text_81">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="261.468756" transform="rotate(-0 9.29034 261.468756)">S16  MedAgentBoard</text>
+   </g>
+   <g id="text_82">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="261.468756" transform="rotate(-0 139.1229 261.468756)">C</text>
+   </g>
+   <g id="text_83">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="261.468756" transform="rotate(-0 181.56816 261.468756)">offline mixed tasks</text>
+   </g>
+   <g id="text_84">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="261.468756" transform="rotate(-0 316.39428 261.468756)">answer</text>
+   </g>
+   <g id="text_85">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="261.468756" transform="rotate(-0 403.78158 261.468756)">task-specific metrics</text>
+   </g>
+   <g id="text_86">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="276.868476" transform="rotate(-0 9.29034 276.868476)">S17  MedAssist</text>
+   </g>
+   <g id="text_87">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="276.868476" transform="rotate(-0 139.1229 276.868476)">J</text>
+   </g>
+   <g id="text_88">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="276.868476" transform="rotate(-0 181.56816 276.868476)">offline mixed benchmarks</text>
+   </g>
+   <g id="text_89">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="276.868476" transform="rotate(-0 316.39428 276.868476)">tool</text>
+   </g>
+   <g id="text_90">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="276.868476" transform="rotate(-0 403.78158 276.868476)">benchmark scores</text>
+   </g>
+   <g id="text_91">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="9.29034" y="292.268196" transform="rotate(-0 9.29034 292.268196)">S18  HealthAdminBench</text>
+   </g>
+   <g id="text_92">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="139.1229" y="292.268196" transform="rotate(-0 139.1229 292.268196)">P</text>
+   </g>
+   <g id="text_93">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="181.56816" y="292.268196" transform="rotate(-0 181.56816 292.268196)">four GUI replicas</text>
+   </g>
+   <g id="text_94">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="316.39428" y="292.268196" transform="rotate(-0 316.39428 292.268196)">sandbox write</text>
+   </g>
+   <g id="text_95">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16334c" x="403.78158" y="292.268196" transform="rotate(-0 403.78158 292.268196)">task/subtask success</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8c71145edd">
+   <rect x="1.8" y="1.8" width="499.356" height="314.28"/>
+  </clipPath>
+ </defs>
+</svg>

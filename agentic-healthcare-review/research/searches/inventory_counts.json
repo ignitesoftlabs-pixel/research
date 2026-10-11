@@ -1,0 +1,9 @@
+{
+  "query_occurrences": 1865,
+  "unique_database_identifiers": 1823,
+  "duplicate_identifier_occurrences": 42,
+  "not_article_level_deduplication": true,
+  "selected_reports": 18,
+  "retrieved_at": "2026-10-11T16:54:34.957687+00:00",
+  "errors": []
+}
