@@ -1,0 +1,2 @@
+# Rights and publication
+The manuscript and figures are original AI-assisted drafts requiring author review. This package does not assign third-party rights or assert publisher acceptance. Publisher PDFs, abstracts, patient records, credentials, and private data are not included. Public bibliographic metadata, persistent identifiers, and original concise analytical notes are provided for verification. IEEEtran class/style retain their upstream distribution terms. Authors must choose the appropriate code/data license and publisher agreement before release or submission.
