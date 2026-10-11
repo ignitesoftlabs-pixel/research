@@ -1,0 +1,28 @@
+# Protocol amendment v2: evidence for authorized and verified clinical action
+Frozen for new searches and triage: 11 October 2026, UTC. Literature cutoff remains 10 October 2026. This amendment follows exploratory searches and a preliminary purposive draft; it is not retrospective preregistration. Subsequent changes must be logged. Existing draft remains in Git history.
+
+## Question and scope
+What empirical evidence supports safe execution of clinical or care-access actions by LLM-based agents, and which action-level safety obligations are actually evaluated?
+
+Population/context: human healthcare, including clinical tasks and administrative actions affecting care access. Concept: LLM-based agents with tool use, iterative external interaction, structured action proposals, or execution. Outcomes: action/effect correctness, authority boundaries, safety/harm or omission, evidence/state integrity, execution recovery, oversight, workload and clinical/access outcomes. Period: January 2022–10 October 2026; English reports. Older guidance may support conceptual background.
+
+## Two evidence streams
+A. Empirical evidence: benchmark, simulation, retrospective, prospective, pilot, or comparative evaluations that test a relevant agent action/safety boundary. Pure static QA without external tools or action/safety evaluation is background. Dialogue studies are eligible only for evaluated interaction/triage/management safety or a clearly specified boundary comparator; do not count them as execution evidence.
+B. Conceptual/review/governance: primary reviews, taxonomies and safety frameworks used only to assess overlap and interpret obligations, not added to empirical outcome denominators. A proposed standard is not an official recognized regulatory standard merely because its authors call it one.
+
+Exclude: agent-based epidemiological simulations without LLM agency; purely drug/molecule discovery; medical training-only simulations without an action-safety relevance; infrastructure marketing; general text generation/QA/prediction without relevant action/safety evaluation; duplicates; outside cutoff. Unclear records remain unresolved, not silently excluded.
+
+## Discovery
+Retain the prior PubMed P1/P2 and arXiv A1 metadata snapshot. Add a safety/action-oriented PubMed query; Europe PMC focused title/abstract discovery; bounded Crossref metadata discovery; primary-source citation chasing and targeted retrieval. Europe PMC overlaps PubMed and preprint indexes, and Crossref relevance-ranked retrieval is not an exhaustive database census. Search logs preserve query, date semantics, result totals, retrieval limits and errors. Scopus, Embase, IEEE Xplore and ACM export searches are planned author tasks where access is unavailable; ready-to-run search strings are provided. Do not claim they were searched.
+
+## Record linkage and screening
+Normalize DOI and exact titles for administrative candidate linkage. Same DOI is a report duplicate; matching titles across versions are link candidates, not automatic study identity. Keep every occurrence and linkage reason. Distinct study reports and revisions require human adjudication. Deterministic title rules prioritize records; they do not establish eligibility or validated exclusion. All records receive a machine-priority status and rationale, then a human-review field. AI assessments of full text are explicitly provisional. Human reviewer A and B must independently screen the full record set, resolve disagreements, and confirm extracted claims before a systematic-review submission. No agreement statistic is invented.
+
+## Extraction and appraisal
+Report identifier/version, study design, environment fidelity, action object, execution boundary, sample/task unit, comparator/budget, trajectory/post-state ground truth, safety endpoint/denominator, intervention/control evidence, uncertainty/coverage, oversight and workload, prospective outcomes, code/data access, threat-model scope, source page/section and interpretation limits. Use supported / partially supported / not assessed / unclear, with a locator and reason. “Not assessed” is about this extraction, never proof the source omitted a feature. No numerical composite quality score. Do not apply diagnostic/trial risk-of-bias tools to engineering benchmarks as if they were clinical trials. Actual clinical studies need design-appropriate appraisal by reviewers; use QUADAS-2/ROBINS-I/RoB 2 only if the design is eligible, with domain-level justification.
+
+## Synthesis and reporting
+Use a claim–evidence–boundary matrix; stratify semantic safety, tool/trajectory safety, destination effects and clinical outcomes. Do not pool unlike endpoint rates. Distinguish proposed control, implemented control, experimentally challenged control and prospective outcome evidence. Compare existing safety frameworks before retaining CAA language; position CAA as an analytical crosswalk/checklist, not first framework or safety certification. Quantitative gap counts use only a frozen coded sample, with unresolved records and access limitations reported, and are not field prevalence.
+
+## Outputs and publication gate
+Versioned queries/inventory/linkage/priority queue; full-text decisions and extraction locators; novelty crosswalk; reporting/appraisal profiles; revised LaTeX/PDF with uncertainty and denominator distinctions; human reviewer workbook and submission checklist. Label the manuscript systematic-review development work until full search/screening, independent reviewer checks and study-level linkage are completed. PRISMA 2020/PRISMA-S are reporting guidance, not evidence that these steps have occurred.
